@@ -15,13 +15,13 @@
 ##
 ## La chaîne de caractère contenu dans _() est éligible à la traduction.
 
-define config.name = _("AppliMobile")
+define config.name = _("jobStorie")
 
 
 ## Détermine si le titre renseigné plus haut est affiché sur l'écran du menu
 ## principal Configurez-le à False (Faux) pour cacher le titre.
 
-define gui.show_name = True
+define gui.show_name = False
 
 
 ## La version du jeu.
