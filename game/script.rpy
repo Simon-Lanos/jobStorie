@@ -5,9 +5,9 @@
 
 # Déclarez les personnages utilisés dans le jeu.
 define e = Character('Barnes', color="#1fe3d7")
-define g = Character('Lux', color="#0000ff")
+define g = Character('Lux', color="#6eb0c9")
 define m = Character('Moi', color="#ffff00")
-define l = Character('Shauwn', color="#ffff00")
+define l = Character('Shauwn', color="#bdb755")
 define a = Character('Sara', color="#e77354")
 define d = Character('Doc', color="#8cc4f4")
 
