@@ -1,13 +1,9 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While processing the idle_color property of style choice_button_text:
-  File "renpy/common/00start.rpy", line 79, in _init_language
-    renpy.change_language(language)
-  File "renpy/common/00stylepreferences.rpy", line 124, in _m1_00stylepreferences__change_language
-    __update()
-  File "renpy/common/00stylepreferences.rpy", line 96, in _m1_00stylepreferences__update
-    renpy.style.rebuild()
-Exception: Color string u'00000' must be 3, 4, 6, or 8 hex digits long.
+While loading <'Image' u'gui/textbox.png'>:
+  File "game/script.rpy", line 106, in script
+    l "Reveille toi !"
+IOError: Couldn't find file 'gui/textbox.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -16,28 +12,67 @@ Full traceback:
     renpy.main.main()
   File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\main.py", line 513, in main
     run(restart)
-  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\main.py", line 71, in run
-    renpy.translation.init_translation()
-  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\translation\__init__.py", line 547, in init_translation
-    renpy.store._init_language()  # @UndefinedVariable
-  File "renpy/common/00start.rpy", line 79, in _init_language
-    renpy.change_language(language)
-  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\translation\__init__.py", line 630, in change_language
-    i()
-  File "renpy/common/00stylepreferences.rpy", line 124, in _m1_00stylepreferences__change_language
-    __update()
-  File "renpy/common/00stylepreferences.rpy", line 96, in _m1_00stylepreferences__update
-    renpy.style.rebuild()
-  File "style.pyx", line 795, in renpy.style.rebuild
-  File "style.pyx", line 788, in renpy.style.build_styles
-  File "style.pyx", line 709, in renpy.style.build_style
-  File "style.pyx", line 706, in renpy.style.build_style
-  File "gen/style_idle_functions.pyx", line 520, in style_idle_functions.idle_color_property
-  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\color.py", line 158, in __new__
-    raise Exception("Color string {!r} must be 3, 4, 6, or 8 hex digits long.".format(c))
-Exception: Color string u'00000' must be 3, 4, 6, or 8 hex digits long.
+  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\main.py", line 139, in run
+    renpy.execution.run_context(True)
+  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\execution.py", line 876, in run_context
+    context.run()
+  File "game/script.rpy", line 106, in script
+    l "Reveille toi !"
+  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\ast.py", line 678, in execute
+    renpy.exports.say(who, what, interact=self.interact, *args, **kwargs)
+  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\exports.py", line 1203, in say
+    who(what, *args, **kwargs)
+  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\character.py", line 1027, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\character.py", line 819, in do_display
+    **display_args)
+  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\character.py", line 568, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\ui.py", line 289, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\display\core.py", line 2662, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\display\core.py", line 3148, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\display\core.py", line 2065, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 487, in renpy.display.render.render_screen
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\display\layout.py", line 719, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 147, in renpy.display.render.render
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\display\layout.py", line 719, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 147, in renpy.display.render.render
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\display\layout.py", line 719, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 147, in renpy.display.render.render
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\display\screen.py", line 669, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 147, in renpy.display.render.render
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\display\layout.py", line 719, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 147, in renpy.display.render.render
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\display\layout.py", line 1149, in render
+    back = render(style.background, bw, bh, st, at)
+  File "render.pyx", line 147, in renpy.display.render.render
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\display\im.py", line 580, in render
+    return cache.get(self, render=True)
+  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\display\im.py", line 266, in get
+    surf = image.load()
+  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\display\im.py", line 625, in load
+    surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
+  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\loader.py", line 576, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'gui/textbox.png'.
 
 Windows-8-6.2.9200
 Ren'Py 7.1.0.882
 jobStorie 1.0
-Wed Oct 10 11:24:29 2018
+Wed Oct 10 14:44:33 2018

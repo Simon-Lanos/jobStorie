@@ -110,8 +110,8 @@ define gui.textbox_yalign = 0.95
 ## L’emplacement relatif à la zone de texte du nom du personnage en train de
 ## parler. La valeur peut être un nombre entier de pixels depuis la gauche ou le
 ## haut ou 0.5 pour le centre.
-define gui.name_xpos = 220
-define gui.name_ypos = 2
+define gui.name_xpos = 290
+define gui.name_ypos = 22
 
 ## L’alignement horizontal du nom du personnage. La valeur peut être 0.0 pour un
 ## alignement à gauche, 0.5 pour le centrer et 1.0 pour un alignement à droite.
@@ -133,11 +133,11 @@ define gui.namebox_tile = False
 
 ## L’emplacement du dialogue relatif à la zone de texte. La valeur peut être un
 ## nombre entier de pixels depuis la gauche ou le haut ou 0.5 pour le centre.
-define gui.dialogue_xpos = 220
-define gui.dialogue_ypos = 65
+define gui.dialogue_xpos = 280
+define gui.dialogue_ypos = 69
 
 ## La largeur maximale en pixels de la zone de dialogue.
-define gui.dialogue_width = 780
+define gui.dialogue_width = 770
 
 ## L’alignement horizontal de la zone de dialogue. La valeur peut être 0.0 pour
 ## un alignement à gauche, 0.5 pour le centrer et 1.0 pour un alignement à
@@ -455,7 +455,7 @@ init python:
         ## Change the size and spacing of various things.
         gui.slider_size = 36
 
-        gui.choice_button_width = 1240
+        gui.choice_button_width = 800
 
         gui.navigation_spacing = 20
         gui.pref_button_spacing = 10
