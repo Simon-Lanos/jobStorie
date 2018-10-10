@@ -19,6 +19,11 @@ transform gauche:
     xalign 0.20
     yalign 0.99
 
+transform center:
+    xalign 0.20
+    yalign 0.99
+
+
 
 
 # Le jeu commence ici
@@ -132,7 +137,7 @@ label acte1:
     hide friend
     scene bg laboratory
     with dissolve
-    show lux gigling at gauche
+    show lux slide at gauche
     with moveinleft
 
     g "Je me permet une petite ellipse car l'histoire n'est pas encore ecrite, bonne chance !"

@@ -72,7 +72,7 @@ define gui.interface_text_font = "DejaVuSans.ttf"
 define gui.text_size = 30
 
 ## La taille pour le nom des personnages.
-define gui.name_text_size = 36
+define gui.name_text_size = 34
 
 ## La taille du texte dans l’interface de jeu.
 define gui.interface_text_size = 22

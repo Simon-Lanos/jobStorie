@@ -1,78 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <'Image' u'gui/textbox.png'>:
-  File "game/script.rpy", line 106, in script
-    l "Reveille toi !"
-IOError: Couldn't find file 'gui/textbox.png'.
+While running game code:
+  File "game/script.rpy", line 135, in script
+    show lux slide at slide
+  File "game/script.rpy", line 135, in <module>
+    show lux slide at slide
+NameError: name 'slide' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\bootstrap.py", line 313, in bootstrap
-    renpy.main.main()
-  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\main.py", line 513, in main
-    run(restart)
-  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\main.py", line 139, in run
-    renpy.execution.run_context(True)
-  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\execution.py", line 876, in run_context
-    context.run()
-  File "game/script.rpy", line 106, in script
-    l "Reveille toi !"
-  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\ast.py", line 678, in execute
-    renpy.exports.say(who, what, interact=self.interact, *args, **kwargs)
-  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\exports.py", line 1203, in say
-    who(what, *args, **kwargs)
-  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\character.py", line 1027, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, **display_args)
-  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\character.py", line 819, in do_display
-    **display_args)
-  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\character.py", line 568, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\ui.py", line 289, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\display\core.py", line 2662, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\display\core.py", line 3148, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\display\core.py", line 2065, in draw_screen
-    renpy.config.screen_height,
-  File "render.pyx", line 487, in renpy.display.render.render_screen
-  File "render.pyx", line 235, in renpy.display.render.render
-  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\display\layout.py", line 719, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 147, in renpy.display.render.render
-  File "render.pyx", line 235, in renpy.display.render.render
-  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\display\layout.py", line 719, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 147, in renpy.display.render.render
-  File "render.pyx", line 235, in renpy.display.render.render
-  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\display\layout.py", line 719, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 147, in renpy.display.render.render
-  File "render.pyx", line 235, in renpy.display.render.render
-  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\display\screen.py", line 669, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 147, in renpy.display.render.render
-  File "render.pyx", line 235, in renpy.display.render.render
-  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\display\layout.py", line 719, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 147, in renpy.display.render.render
-  File "render.pyx", line 235, in renpy.display.render.render
-  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\display\layout.py", line 1149, in render
-    back = render(style.background, bw, bh, st, at)
-  File "render.pyx", line 147, in renpy.display.render.render
-  File "render.pyx", line 235, in renpy.display.render.render
-  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\display\im.py", line 580, in render
-    return cache.get(self, render=True)
-  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\display\im.py", line 266, in get
-    surf = image.load()
-  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\display\im.py", line 625, in load
-    surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
-  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\loader.py", line 576, in load
-    raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'gui/textbox.png'.
+  File "game/script.rpy", line 135, in script
+    show lux slide at slide
+  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\ast.py", line 1151, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\ast.py", line 1110, in show_imspec
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\python.py", line 1944, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\python.py", line 1937, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 135, in <module>
+    show lux slide at slide
+NameError: name 'slide' is not defined
 
 Windows-8-6.2.9200
 Ren'Py 7.1.0.882
 jobStorie 1.0
-Wed Oct 10 14:44:33 2018
+Wed Oct 10 15:41:29 2018
