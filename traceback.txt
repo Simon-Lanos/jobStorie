@@ -1,22 +1,43 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/script.rpy", line 165, in script
-    jump design
-ScriptError: could not find label 'design'.
+While processing the idle_color property of style choice_button_text:
+  File "renpy/common/00start.rpy", line 79, in _init_language
+    renpy.change_language(language)
+  File "renpy/common/00stylepreferences.rpy", line 124, in _m1_00stylepreferences__change_language
+    __update()
+  File "renpy/common/00stylepreferences.rpy", line 96, in _m1_00stylepreferences__update
+    renpy.style.rebuild()
+Exception: Color string u'fffff' must be 3, 4, 6, or 8 hex digits long.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 165, in script
-    jump design
-  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\ast.py", line 1620, in execute
-    rv = renpy.game.script.lookup(target)
-  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\script.py", line 873, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'design'.
+  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\bootstrap.py", line 313, in bootstrap
+    renpy.main.main()
+  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\main.py", line 513, in main
+    run(restart)
+  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\main.py", line 71, in run
+    renpy.translation.init_translation()
+  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\translation\__init__.py", line 547, in init_translation
+    renpy.store._init_language()  # @UndefinedVariable
+  File "renpy/common/00start.rpy", line 79, in _init_language
+    renpy.change_language(language)
+  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\translation\__init__.py", line 630, in change_language
+    i()
+  File "renpy/common/00stylepreferences.rpy", line 124, in _m1_00stylepreferences__change_language
+    __update()
+  File "renpy/common/00stylepreferences.rpy", line 96, in _m1_00stylepreferences__update
+    renpy.style.rebuild()
+  File "style.pyx", line 795, in renpy.style.rebuild
+  File "style.pyx", line 788, in renpy.style.build_styles
+  File "style.pyx", line 709, in renpy.style.build_style
+  File "style.pyx", line 706, in renpy.style.build_style
+  File "gen/style_idle_functions.pyx", line 520, in style_idle_functions.idle_color_property
+  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\color.py", line 158, in __new__
+    raise Exception("Color string {!r} must be 3, 4, 6, or 8 hex digits long.".format(c))
+Exception: Color string u'fffff' must be 3, 4, 6, or 8 hex digits long.
 
 Windows-8-6.2.9200
 Ren'Py 7.1.0.882
 jobStorie 1.0
-Tue Oct 09 10:06:17 2018
+Wed Oct 10 11:10:34 2018
