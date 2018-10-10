@@ -7,7 +7,7 @@ While processing the idle_color property of style choice_button_text:
     __update()
   File "renpy/common/00stylepreferences.rpy", line 96, in _m1_00stylepreferences__update
     renpy.style.rebuild()
-Exception: Color string u'fffff' must be 3, 4, 6, or 8 hex digits long.
+Exception: Color string u'00000' must be 3, 4, 6, or 8 hex digits long.
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -35,9 +35,9 @@ Full traceback:
   File "gen/style_idle_functions.pyx", line 520, in style_idle_functions.idle_color_property
   File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\color.py", line 158, in __new__
     raise Exception("Color string {!r} must be 3, 4, 6, or 8 hex digits long.".format(c))
-Exception: Color string u'fffff' must be 3, 4, 6, or 8 hex digits long.
+Exception: Color string u'00000' must be 3, 4, 6, or 8 hex digits long.
 
 Windows-8-6.2.9200
 Ren'Py 7.1.0.882
 jobStorie 1.0
-Wed Oct 10 11:10:34 2018
+Wed Oct 10 11:24:29 2018
