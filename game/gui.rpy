@@ -69,10 +69,10 @@ define gui.name_text_font = "DejaVuSans.ttf"
 define gui.interface_text_font = "DejaVuSans.ttf"
 
 ## La taille normale pour les dialogues.
-define gui.text_size = 22
+define gui.text_size = 30
 
 ## La taille pour le nom des personnages.
-define gui.name_text_size = 30
+define gui.name_text_size = 36
 
 ## La taille du texte dans l’interface de jeu.
 define gui.interface_text_size = 22
@@ -104,14 +104,14 @@ define gui.textbox_height = 185
 
 ## L’emplacement vertical de la zone de texte à l’écran. 0.0 pour le haut, 0.5
 ## pour le centre et 1.0 pour le bas.
-define gui.textbox_yalign = 1.0
+define gui.textbox_yalign = 0.95
 
 
 ## L’emplacement relatif à la zone de texte du nom du personnage en train de
 ## parler. La valeur peut être un nombre entier de pixels depuis la gauche ou le
 ## haut ou 0.5 pour le centre.
-define gui.name_xpos = 240
-define gui.name_ypos = 0
+define gui.name_xpos = 220
+define gui.name_ypos = 2
 
 ## L’alignement horizontal du nom du personnage. La valeur peut être 0.0 pour un
 ## alignement à gauche, 0.5 pour le centrer et 1.0 pour un alignement à droite.
@@ -133,11 +133,11 @@ define gui.namebox_tile = False
 
 ## L’emplacement du dialogue relatif à la zone de texte. La valeur peut être un
 ## nombre entier de pixels depuis la gauche ou le haut ou 0.5 pour le centre.
-define gui.dialogue_xpos = 268
-define gui.dialogue_ypos = 50
+define gui.dialogue_xpos = 220
+define gui.dialogue_ypos = 65
 
 ## La largeur maximale en pixels de la zone de dialogue.
-define gui.dialogue_width = 744
+define gui.dialogue_width = 780
 
 ## L’alignement horizontal de la zone de dialogue. La valeur peut être 0.0 pour
 ## un alignement à gauche, 0.5 pour le centrer et 1.0 pour un alignement à
