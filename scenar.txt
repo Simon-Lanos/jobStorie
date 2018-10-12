@@ -1,0 +1,58 @@
+Scénario futuriste
+
+Un homme a développé un robot doté d'un intelligence artificiel supérieur.
+Il est caplable de se déplacer, de soulever des charges de plusieurs centaine de kilo et possède une capacité d'anticipation.
+Un véritable chef d'oeuvre technologique.
+
+Du moins sur le papier. En effet, la sortie de cette machine révolutionnaire fait un gros flop. 
+Personne ne cherche à obtenir ce bijou symbole de de l'évolution de l'IA. Pas étonant quand on sait que ce projet a été développer dans l'ombre d'un sous-sol.
+
+Ce savant, désepéré après ses longue année de dur travail, vient cherché votre aide ainsi que celle de votre groupe d'élite, pour tenter de redresser la situation...
+
+
+
+
+
+
+Protagoniste : 
+	- NomDuJoueur : il est aussi le narateur de l'histoire
+
+
+Amie d'enfance : 
+	- Sara : 
+
+
+Geek à lunette :
+	- Shawn : 
+
+
+Mec chelou :
+	- Mr.Tanaka :
+
+
+Le robot futuriste :
+	- N.O.A. (Nanite operated automaton)
+
+
+
+
+
+Ahhh ! 
+Enfin rentré ! 
+Je vais pouvoir me détendre après cette journée de travail.
+
+
+(problème bdd, nanite gestion de mémoir défectueux, réparation par introduction de la méthode merise)
+
+(problème path finding, capteur foireux mauvaise interprétation des valeurs, fix des capteurs côté applicatif)
+
+(problème GPS, décalage heure local et heure satellite sychro imposible, reconfiguration de l'heure)
+
+(conférence A,)
+
+(Conférence B,)
+
+(Conférence C,)
+
+
+
