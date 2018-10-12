@@ -42,17 +42,43 @@ Enfin rentré !
 Je vais pouvoir me détendre après cette journée de travail.
 
 
-(problème bdd, nanite gestion de mémoir défectueux, réparation par introduction de la méthode merise)
+(problème bdd, nanite gestion de mémoire défectueux, réparation par introduction de la méthode merise)
+Si bdd réparée, améliorations du language parlé du robot, sinon le robot s'exprimera comme un enfant de 5 ans.
 
-(problème path finding, capteur foireux mauvaise interprétation des valeurs, fix des capteurs côté applicatif)
+(problème path finding, capteurs foireux mauvaise interprétation des valeurs, fix des capteurs côté applicatif)
+Si fix ok , amélioration des performances de compréhension des valeurs, sinon le robot restera incapable d'évoluer dans un environenmment .  
 
-(problème GPS, décalage heure local et heure satellite sychro imposible, reconfiguration de l'heure)
+(problème GPS, décalage heure local et heure satellite synchro imposible, reconfiguration de l'heure)
+Si bonne synchro, pas de timer lors des conférences, le joueur arrive à l'heure, si mauvaise synchro l'horloge est mal configuré,
+le joueur est en retard, déclenchement du timer conférence.
 
 (conférence A,)
 
 (Conférence B,)
 
 (Conférence C,)
+
+/!\ La conférence visionné n'a pas d'influence sur la fin de la partie ! /!\
+
+
+Au retour des conférences, de nouvelles améliorations sont disponibles : 
+
+Si le joueur, n'était pas en retard au conférences, il aura accès à plus d'améliorations, s'il est en retard, il sera sanctionné et aura moins de possibilité d'améliorations du robot:
+
+En retard : 2 améliorations: Communiquer : 
+ 
+			     Réflechir : Amélioration du réseau neuronal 
+
+Pas en retard :+ d'amélio possible :Communiquer - porter :
+
+                                    Communiquer - reflechir :
+
+			            Réflechir - communiquer :
+ 
+                                    Réflechir- porter:
+                                     
+Fin des amélios => déblocage d'une fin pour le robot en fonction des choix . Fiche métier débloquée en fonction des choix pondérés.
+
 
 
 
