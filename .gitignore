@@ -1,3 +1,8 @@
 log.txt
 errors.txt
+traceback.txt
 game/saves
+game/gui.rpyc
+game/options.rpyc
+game/screens.rpyc
+game/script.rpyc
