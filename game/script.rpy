@@ -143,7 +143,7 @@ label acte1:
     hide friend
     scene bg laboratory
     with dissolve
-    show lux slide at gauche
+    show lux gigling at gauche
     with moveinleft
 
     g "Je me permet une petite ellipse car l'histoire n'est pas encore ecrite, bonne chance !"

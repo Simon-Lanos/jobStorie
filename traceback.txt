@@ -1,50 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-<<<<<<< HEAD
-  File "game/script.rpy", line 135, in script
-    show lux slide at slide
-  File "game/script.rpy", line 135, in <module>
-    show lux slide at slide
-NameError: name 'slide' is not defined
-=======
   File "renpy/common/00start.rpy", line 120, in script
     return
-Exception: Could not find return label (u'D:\\Application\\RenPy\\project\\appliMobile\\AppliMobile/game/script.rpy', 1539330570, 9).
->>>>>>> develop
+Exception: Could not find return label (u'D:\\Antoine\\Documents\\renpy-7.1.0-sdk\\jobStorie/game/script.rpy', 1539078981, 8).
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-<<<<<<< HEAD
-  File "game/script.rpy", line 135, in script
-    show lux slide at slide
-  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\ast.py", line 1151, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\ast.py", line 1110, in show_imspec
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\python.py", line 1944, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\python.py", line 1937, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 135, in <module>
-    show lux slide at slide
-NameError: name 'slide' is not defined
-=======
   File "renpy/common/00start.rpy", line 120, in script
     return
-  File "D:\Application\RenPy\renpy-7.1.0-sdk\renpy\ast.py", line 1468, in execute
+  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\ast.py", line 1468, in execute
     next_node(renpy.game.context().lookup_return(pop=True))
-  File "D:\Application\RenPy\renpy-7.1.0-sdk\renpy\execution.py", line 664, in lookup_return
+  File "D:\Antoine\Documents\renpy-7.1.0-sdk\renpy\execution.py", line 664, in lookup_return
     raise Exception("Could not find return label {!r}.".format(self.return_stack[-1]))
-Exception: Could not find return label (u'D:\\Application\\RenPy\\project\\appliMobile\\AppliMobile/game/script.rpy', 1539330570, 9).
->>>>>>> develop
+Exception: Could not find return label (u'D:\\Antoine\\Documents\\renpy-7.1.0-sdk\\jobStorie/game/script.rpy', 1539078981, 8).
 
 Windows-8-6.2.9200
 Ren'Py 7.1.0.882
-jobStorie 1.0
-<<<<<<< HEAD
-Wed Oct 10 15:41:29 2018
-=======
-Fri Oct 12 09:50:54 2018
->>>>>>> develop
+JobStorie 1.1
+Thu Oct 11 11:07:52 2018
