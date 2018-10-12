@@ -19,18 +19,13 @@ transform gauche:
     xalign 0.20
     yalign 0.99
 
-<<<<<<< HEAD
 transform center:
     xalign 0.20
     yalign 0.99
 
-
-
-=======
 style fiche:
     color '#ed6309'
     bold True
->>>>>>> develop
 
 # Le jeu commence ici
 label start:
