@@ -2,6 +2,7 @@ log.txt
 errors.txt
 traceback.txt
 game/saves
+game/cache
 game/gui.rpyc
 game/options.rpyc
 game/screens.rpyc
