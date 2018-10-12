@@ -19,7 +19,9 @@ transform gauche:
     xalign 0.20
     yalign 0.99
 
-
+style fiche:
+    color '#ed6309'
+    bold True
 
 # Le jeu commence ici
 label start:
@@ -29,9 +31,9 @@ label start:
     show lux gigling at gauche
     with moveinleft
 
-    g "Bienvenue sur ......, je suis lux la speakerine."
+    g "Bienvenue sur ......, je suis lux la {=fiche}speakerine{/color}."
 
-    g "Je suis la narratrice mais aussi l'une des personnages de cette story !"
+    g "Je suis la narratrice mais aussi l'un des personnages de cette story !"
 
 
     menu:
@@ -54,14 +56,14 @@ label reponse2:
 
 label suite:
 
-    g "Tu est donc le personnage principal de cette histoire, tout tes choix influeront sur la fin !"
+    g "Tu es donc le personnage principal de cette histoire, tout tes choix influeront sur la fin !"
 
     menu:
 
         "Et concretement je dois faire quoi ?":
             jump reponse3
 
-        "J'ai toujours su que j'étais un heros":
+        "J'ai toujours su que j'étais un héros":
             jump reponse4
 
         "Je veux juste rentrer chez moi !":
@@ -94,7 +96,7 @@ label reponse6:
 label suite2:
 
     g "Sache aussi que je t'enverrais des informations de temps en temps pour te permettre de comprendre certains termes et technos  !"
-    g "Enfin bref tu verra bien, Il est temps pour toi de commencer l'histoire, à + !"
+    g "Enfin bref tu verra bien, il est temps pour toi de commencer l'histoire, à + !"
     jump history
 
 label history:  
@@ -113,16 +115,16 @@ label history:
     show friend unhappy at gauche
     with moveinleft
 
-    a "Vous avez entendu parler de cet evenement sur les nouvelles technologies ?"
-    l "Oui, mais on n'a pas que ca à faire !"
+    a "Vous avez entendu parler de cet évenement sur les nouvelles technologies ?"
+    l "Oui, mais on n'a pas que ça à faire !"
     a "Et toi, qu'en pense tu ?"
 
     menu:
 
-        "Bof, on a mieux a faire !":
+        "Bof, on a mieux à faire !":
             jump acte1
 
-        "Si ca te fais plaisir !":
+        "Si ça te fais plaisir !":
             jump acte1
         
 
@@ -152,16 +154,17 @@ label acte1:
 
     menu:
 
-        "Il faut s'occuper des problemes techniques !":
+        "Il faut s'occuper des problèmes techniques !":
+            l "Bon choix, partons la dessus !"
             jump dev
 
         "Il faut le rendre présentable et plus ergonomique !":
+            l "Bon choix, partons la dessus !"
             jump non
 
         "Il faut commencer pas seduire la communautée !":
+            l "Bon choix, partons la dessus !"
             jump non
-
-    l "Bon choix, partons la dessus !" 
 
 
 label non:    
