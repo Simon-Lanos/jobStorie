@@ -65,17 +65,23 @@ Au retour des conférences, de nouvelles améliorations sont disponibles :
 
 Si le joueur, n'était pas en retard au conférences, il aura accès à plus d'améliorations, s'il est en retard, il sera sanctionné et aura moins de possibilité d'améliorations du robot:
 
-En retard : 2 améliorations: Communiquer : 
+En retard : 2 améliorations: Communiquer : Amélioration de l'émotionnel
+                                           Le robot sera un modèle Brasseur d'air
  
-			     Réflechir : Amélioration du réseau neuronal 
+			     Réflechir : Amélioration du réseau neuronal
+                                         Le robot sera un modèle Intello
 
-Pas en retard :+ d'amélio possible :Communiquer - porter :
+Pas en retard :+ d'amélio possible : Communiquer - porter : amélioration de l'exosquelette - Amélioration de l'émotionnel 
+				     Le robot sera un modèle Mule
 
-                                    Communiquer - reflechir :
+                                    Communiquer - reflechir : Amélioration du réseau neuronal -Amélioration de l'émotionnel
+                                    Le robot sera un modèle Marketting
+			           
+                                    Réflechir- porter: Amélioration du réseau neuronal - amélioration de l'exosquelette
+                                    Le robot sera un modèle Assistant
 
-			            Réflechir - communiquer :
- 
-                                    Réflechir- porter:
+Si tous les upgrades ont été faits le robot sera un modèle 
+Si aucun upgrades ont été réussi le robot sera un modèle Taggle Home . Pour interagir avec lui, il faut dire "Ok Taggle" ou "Hey Taggle ! " 
                                      
 Fin des amélios => déblocage d'une fin pour le robot en fonction des choix . Fiche métier débloquée en fonction des choix pondérés.
 
