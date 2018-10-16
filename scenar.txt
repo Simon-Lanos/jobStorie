@@ -42,6 +42,8 @@ Enfin rentré !
 Je vais pouvoir me détendre après cette journée de travail.
 
 
+1 - Communication de N.O.A
+
 (problème bdd, nanite gestion de mémoire défectueux, réparation par introduction de la méthode merise)
 Si bdd réparée, améliorations du language parlé du robot, sinon le robot s'exprimera comme un enfant de 5 ans.
 
@@ -86,20 +88,88 @@ N.O.A: J’ai les puces à l’air ! Oh, juste ciel !
 
 Professeur: Nous règlerons ça plus tard !
 
+N.O.A : Souhaitez vous que je vous apporte un rafraichissment ? 
+
+*****Transition*******
+
 --------- Mauvais choix: Les bugs sont toujours présents , N.O.A s'exprime comme un enfant de 5 ans --------
 
 N.O.A : Toi, tu es moche ! et tu pues ! 
 
 Professeur: C'est pas gagné ! 
 
-Joueur : C'est pas moi ! C'est mon doigt qui a glissé ! 
+Joueur : C'est pas moi ! C'est mon doigt qui a glissé ! J'ai une petite faim ! N.O.A tu peux nous ramener un petit quelque chose ? 
 
-N.O.A : C'est à quelle heure le goûter ? 
+*****Transition*******
 
 
+
+2- Déplacement de N.O.A
 
 (problème path finding, capteurs foireux mauvaise interprétation des valeurs, fix des capteurs côté applicatif)
 Si fix ok , amélioration des performances de compréhension des valeurs, sinon le robot restera incapable d'évoluer dans un environenmment .  
+
+Professeur : Je crainds qu'il faille qu'on le fasse nous même ! malheuresement les capteurs de N.O.A sont défectueux ! Il ne peut pas se déplacer sans casser tout ou passer à travers un mur !
+
+Joueur : Vous êtes sérieux ? Mais qu'est ce que c'est que ce robot ? 
+
+Professeur : Je crois que j'ai fait une erreur en copiant-codant trouvé sur internet.
+
+Joueur : Copier illegalement c'est mal !
+
+Professeur : Je sais , j'aurais du coder moi même ! 
+
+*le joueur regarde le code*
+
+Joueur : Euh ? mais ca a été codé avec les pieds ! 
+
+Professeur : Je dirais même plus, avec une autre partie de l'anatomie ...
+
+Joueur : Bon , corrigeons ça ! 
+
+N.O.A : Je ressens une étrange sensation ... Comme des fourmis dans ma tête !
+
+Professeur : Ne t'inquiètes pas, ça ne durera pas longtemps!
+
+*******************  Choix *********************
+
+Joueur : Comme l'a dit je sais plus qui : Lève toi ! Et trace ta route ! 
+
+Professeur : Euh ? Tu es vraiment sûr de ta citation ?
+
+Joueur : Pourquoi ? c'est pas la bonne ? 
+
+Professeur : Pas vraiment , mais passons ... 
+
+---------Bon Choix : la qualité du code est meilleure, les valeurs renvoyées par les capteurs sont bien interprétées , permettant le déplacement du robot ------
+
+N.O.A : Je me déplace, c'est un miracle ! Merci mon dieu ! 
+
+Joueur : Appelles moi Joueur , ça ira !
+
+N.O.A : Très bien, j'associe *Joueur* à un statut divin.
+
+Professeur: N'en fais pas trop non plus ! C'est pas compliqué le code ! 
+
+Joueur : Je vais être en retard . N.O.A quelle heure est il ? 
+
+
+---------Mauvais Choix : la qualité du code est toujours aussi mauvaise, les valeurs renvoyées par les capteurs  ne sont toujours pas bien interprétées , ne permettant pas le déplacement du robot ------
+
+N.O.A : Je ne comprends pas ... Est ce que je me déplace ? 
+
+Professeur: Non , toujours pas ! Le fix n'as pas fonctionné ...
+
+Joueur: On aura essayé ... On va bien lui trouver une fonction à ce tas de ferrailles! Un pot de fleur qui parle c'est bien non ?
+
+Professeur : Ca fait cher le pot de fleur ! 
+
+Joueur : Et une horloge parlante ? N.O.A quelle heure est-il ? 
+ 
+
+
+
+3 - Configuration de N.O.A
 
 (problème GPS, décalage heure local et heure satellite synchro imposible, reconfiguration de l'heure)
 Si bonne synchro, pas de timer lors des conférences, le joueur arrive à l'heure, si mauvaise synchro l'horloge est mal configuré,
