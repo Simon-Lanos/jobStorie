@@ -45,6 +45,59 @@ Je vais pouvoir me détendre après cette journée de travail.
 (problème bdd, nanite gestion de mémoire défectueux, réparation par introduction de la méthode merise)
 Si bdd réparée, améliorations du language parlé du robot, sinon le robot s'exprimera comme un enfant de 5 ans.
 
+* N.O.A s'exprime dans un langage qui n'a aucun sens*
+
+Professeur :
+Comme vous le voyez , notre robot à un "léger" soucis de communication avec l'espèce humaine. En l'état, il est inutilisable. Je ne comprends vraiment pas ce qu'il se passe au niveau de sa base de données... Je pense que vous devriez y jeter un coup d'oeil.
+
+*Le joueur sort un pc et se connecte au robot*
+
+*Access Denied*
+
+Joueur: Ca ne marche pas ! Je n'ai pas les droits pour me connecter ! 
+
+Professeur: Tu as mal tapé le mot de passe que je t'ai envoyé ! 
+
+*Le joueur retape le mot de passe azerty123456*
+
+*Access Granted, Welcome Aboard ! *
+
+Joueur : Ah ! Ca y est ça marche !
+
+* Le joueur bidouille dans la base de données* 
+
+*******************  Choix *********************
+
+---------Bon Choix : La BDD est fixed, le robot s'exprime mieux ! ------
+
+N.O.A : Bonjour et bienvenue, Je suis N.O.A . 
+
+Joueur : Il s'exprime mieux la ? 
+
+Professeur : Ton manque de foi me consterne.
+
+N.O.A :Je maîtrise six millions de formes de communication.
+
+Joueur : Ce n’est pas parce que tu parles que tu es intelligent.
+
+Professeur : C'est vrai, qu'il ressemble à un gros sac de puces ! 
+
+N.O.A: J’ai les puces à l’air ! Oh, juste ciel !
+
+Professeur: Nous règlerons ça plus tard !
+
+--------- Mauvais choix: Les bugs sont toujours présents , N.O.A s'exprime comme un enfant de 5 ans --------
+
+N.O.A : Toi, tu es moche ! et tu pues ! 
+
+Professeur: C'est pas gagné ! 
+
+Joueur : C'est pas moi ! C'est mon doigt qui a glissé ! 
+
+N.O.A : C'est à quelle heure le goûter ? 
+
+
+
 (problème path finding, capteurs foireux mauvaise interprétation des valeurs, fix des capteurs côté applicatif)
 Si fix ok , amélioration des performances de compréhension des valeurs, sinon le robot restera incapable d'évoluer dans un environenmment .  
 
@@ -81,9 +134,11 @@ Pas en retard :+ d'amélio possible : Communiquer - porter : amélioration de l'ex
                                     Le robot sera un modèle Assistant
 
 Si tous les upgrades ont été faits le robot sera un modèle 
-Si aucun upgrades ont été réussi le robot sera un modèle Taggle Home . Pour interagir avec lui, il faut dire "Ok Taggle" ou "Hey Taggle ! " 
+Si aucun upgrades ont été réussi le robot sera un modèle Moggle Home . Pour interagir avec lui, il faut dire "Ok Moggle" ou "Hey Moggle ! " 
                                      
 Fin des amélios => déblocage d'une fin pour le robot en fonction des choix . Fiche métier débloquée en fonction des choix pondérés.
+
+
 
 
 
