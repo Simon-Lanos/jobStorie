@@ -257,6 +257,8 @@ Professeur : Mon Dieu ! Qu'avons nous fait ? On a pas été un peu trop loin ?
 
 Joueur : Non ! c'est juste le temps qu'il s'habitue à ces nouvelles fonctions.
 
+Le robot sera de modèle : Brasseur d'air
+
 /////END\\\\\ 
 
 
@@ -297,41 +299,249 @@ N.O.A: Regardez vos téléphones !
 Professeur : "Je suis partout" .... N.O.A ? Est ce bien toi qui vient de faire ça ? 
 
 *Le smartphone du professeur vibre, un message affiche oui*
+
+Le robot sera de modèle : Intello
+
 /////END\\\\\
 
 
 ***********************************SI JOUEUR  PAS EN RETARD AUX CONF'**********************************************
 
+Joueur : Il y a des combos de fonctionnalités vraiment intéressantes ! Une fois amélioré N.O.A sera un véritable succès dans le monde entier !
 
-\* Si le joueur n'était pas en retard , il a appris plus de choses , il débloque plus d'améliorations disponibles ! */
+Professeur : Tu réussirais là ou j'ai échouer ... 
+
+*************************************** Choix *************************************
+
+******************************************** Combo Communiquer - porter***********************************************
+
+******Communication : *********
+
+Joueur: N.O.A est froid 
+
+N.O.A : Mon CPU est actuellement à 75°C , je ne suis pas froid !
+
+Joueur : Pas froid en témpérature ... Froid dans ton approche ! Tu parles comme un robot ! Regarde ! Réponds à ma question : "C'est une bonne situation robot ?"
+
+N.O.A: Mais je suis un robot, je n'ai pas de situation . 
+
+Professeur : Tu as raison ! Changeons ça , c'est vrai que ta façon de parler n'est pas des plus naturelle ! 
+
+Joueur : Au travail ! 
+
+*joueur modifie dans la base de données le dictionnaire de mot employé par N.O.A, N.O.A sera aussi capable de ressentir les émotions des humains avec qui il évolue*
+
+N.O.A : Je me sens ... différent.
+
+Joueur : C'est normal ! Ca va être un peu déroutant pour toi ! Faisons un test . Réponds à ma question : "C'est une bonne situation robot ?"
+
+N.O.A: Vous savez, moi je ne crois pas qu’il y ait de bonne ou de mauvaise situation. Moi, si je devais résumer ma vie aujourd’hui avec vous, je dirais que c’est d’abord des rencontres. Des gens qui m’ont tendu la main, peut-être à un moment où je ne pouvais pas, où j’étais seul chez moi. Et c’est assez curieux de se dire que les hasards, les rencontres forgent une destinée... Parce que quand on a le goût de la chose, quand on a le goût de la chose bien faite, le beau geste, parfois on ne trouve pas l’interlocuteur en face je dirais, le miroir qui vous aide à avancer. Alors ça n’est pas mon cas, comme je disais là, puisque moi au contraire, j’ai pu : et je dis merci à la vie, je lui dis merci, je chante la vie, je danse la vie... je ne suis qu’amour ! Et finalement, quand beaucoup de gens aujourd’hui me disent « Mais comment fais-tu pour avoir cette humanité ? », et bien je leur réponds très simplement, je leur dis que c’est ce goût de l’amour ce goût donc qui m’a poussé aujourd’hui à entreprendre une construction mécanique, mais demain qui sait ? Peut-être simplement à me mettre au service de la communauté, à faire le don, le don de soi...
+
+Professeur : Mon Dieu ! Qu'avons nous fait ? On a pas été un peu trop loin ? 
+
+Joueur : Non ! c'est juste le temps qu'il s'habitue à ces nouvelles fonctions.
+
+******Porter******
+
+Professeur : Impressionnant ! 
+
+Joueur : Développons un peu sa force ! Ce sera un vrai super héros !
+
+N.O.A: Je serais super N.O.A, je serais le meilleur au tennis ! 
+
+Professeur : Ca sonne bien ! Tu te battras sans répit ? Tu feras tout pour être le meilleur ? Et tu gagneras les défis , parcourant la terre entière !
+
+Professeur : Pourquoi j'ai une impression d'avoir déjà entendu ça ? 
+
+*Joueur et professeur bricolent un exosquelette décuplant la force*
+
+Joueur : Voila c'est fini ! Initialisation en cours ... 
+
+Professeur : Je crois qu'on devrait l'habiller ! Il est vraiment trop ... Impressionnant !
+
+Joueur: Attention , il se réveille ! *Sarah entre dans la pièce* Sarah tu arrives au bon moment ! Le N.O.A nouveau est arrivé ! 
+
+*N.O.A se réveille brutalement lorsqu'il entend le prénom Sarah*
+
+N.O.A : Sarah ? *Son Terminator a ajouter*
+
+Professeur : Il devient fou ! Sarah , viens avec moi si tu veux vivre ! 
+
+Joueur : Ou allez vous ? 
+
+Professeur : Je reviendrais ... 
+
+Joueur : Calme toi N.O.A ! Ils sont partis ! Essaye de controler ta nouvelle force ... Ne bascule pas vers le coté obscur de la Force ... 
+
+N.O.A : Reboot moi ! S'il te plait ! 
+
+*joueur execute un hard reboot sur N.O.A, après plusieurs minutes N.O.A redémarre*
+
+Joueur: Euh ? N.O.A? Tout va bien ?
+
+N.O.A: Oui, un morceau de code de l'ancien propriétaire de cet exosquelette a corrompu mes fichiers. Le système est à nouveau opérationnelle à 100% . Ma force à été décuplé , je pourrais aider le professeur dans ses taches au quotidien désormais.
+
+Le robot sera de modèle : Mule
+
+******************************************* Communiquer - reflechir *************************************************
+
+******Communication : *********
+
+Joueur: N.O.A est froid 
+
+N.O.A : Mon CPU est actuellement à 75°C , je ne suis pas froid !
+
+Joueur : Pas froid en témpérature ... Froid dans ton approche ! Tu parles comme un robot ! Regarde ! Réponds à ma question : "C'est une bonne situation robot ?"
+
+N.O.A: Mais je suis un robot, je n'ai pas de situation . 
+
+Professeur : Tu as raison ! Changeons ça , c'est vrai que ta façon de parler n'est pas des plus naturelle ! 
+
+Joueur : Au travail ! 
+
+*joueur modifie dans la base de données le dictionnaire de mot employé par N.O.A, N.O.A sera aussi capable de ressentir les émotions des humains avec qui il évolue*
+
+N.O.A : Je me sens ... différent.
+
+Joueur : C'est normal ! Ca va être un peu déroutant pour toi ! Faisons un test . Réponds à ma question : "C'est une bonne situation robot ?"
+
+N.O.A: Vous savez, moi je ne crois pas qu’il y ait de bonne ou de mauvaise situation. Moi, si je devais résumer ma vie aujourd’hui avec vous, je dirais que c’est d’abord des rencontres. Des gens qui m’ont tendu la main, peut-être à un moment où je ne pouvais pas, où j’étais seul chez moi. Et c’est assez curieux de se dire que les hasards, les rencontres forgent une destinée... Parce que quand on a le goût de la chose, quand on a le goût de la chose bien faite, le beau geste, parfois on ne trouve pas l’interlocuteur en face je dirais, le miroir qui vous aide à avancer. Alors ça n’est pas mon cas, comme je disais là, puisque moi au contraire, j’ai pu : et je dis merci à la vie, je lui dis merci, je chante la vie, je danse la vie... je ne suis qu’amour ! Et finalement, quand beaucoup de gens aujourd’hui me disent « Mais comment fais-tu pour avoir cette humanité ? », et bien je leur réponds très simplement, je leur dis que c’est ce goût de l’amour ce goût donc qui m’a poussé aujourd’hui à entreprendre une construction mécanique, mais demain qui sait ? Peut-être simplement à me mettre au service de la communauté, à faire le don, le don de soi...
+
+Professeur : Mon Dieu ! Qu'avons nous fait ? On a pas été un peu trop loin ? 
+
+Joueur : Non ! c'est juste le temps qu'il s'habitue à ces nouvelles fonctions.
 
 
-Au retour des conférences, de nouvelles améliorations sont disponibles : 
 
-Si le joueur, n'était pas en retard au conférences, il aura accès à plus d'améliorations, s'il est en retard, il sera sanctionné et aura moins de possibilité d'améliorations du robot:
+******Réflexion:**********
 
-En retard : 2 améliorations: Communiquer : Amélioration de l'émotionnel
-                                           Le robot sera un modèle Brasseur d'air
- 
-			     Réflechir : Amélioration du réseau neuronal
-                                         Le robot sera un modèle Intello
+Joueur : Passons à son système neuronal ! N.O.A n'est pas très malin, il est un peu long à apprendre. On devrait améliorer son système neuronal.
+
+Professeur : Il est encore jeune. 
+
+Joueur : Un petit test s'impose ... N.O.A ? Qu'est ce qui est petit et marron ? 
+
+N.O.A : Un marron ? 
+
+Professeur : Il est fort ce robot ! 
+
+Joueur : Il n'est même pas connecté à l'Internet du VVeb.... On doit ne le faire "grandir" !
+
+N.O.A: Je ne suis pas sourd, je vous entends ...
+
+*joueur se connecte au réseau neuronal de N.O.A , l'améliore pour qu'il soit beaucoup plus performant. La vitesse d'apprentissage est décuplé. Une connexion Internet est ajouté, N.O.A sera donc capable d'entraîner son réseau neuronal sur le VVeb !*
+
+N.O.A : Je te sens dans ma tête ! Sors d'ici !
+
+Joueur : Arrête de bouger ! Tu vas nous péter un cable ! J'ai presque fini ! 
+
+N.O.A: Oh ! Ca chatouille !
+
+Joueur : C'est fini ! Comment tu te sens ? 
+
+N.O.A : Je note aucune différence ... Ah si , attendez ... Mon cerveau a atteint 100% de ses capacités.
+
+*Les smartphones se mettent à sonner*
+
+N.O.A: Regardez vos téléphones ! 
+
+*Tous sortent leur smartphone et regarde le message sur l'écran*
+
+Professeur : "Je suis partout" .... N.O.A ? Est ce bien toi qui vient de faire ça ? 
+
+*Le smartphone du professeur vibre, un message affiche oui*
+
+Le robot sera de modèle : Marketting
+
+/////END\\\\\
+
+
+****************************************************** Réflechir- porter *********************************************
+
+******Réflexion:**********
+
+
+Joueur : N.O.A n'est pas très malin, il est un peu long à apprendre. On devrait améliorer son système neuronal.
+
+Professeur : Il est encore jeune. 
+
+Joueur : Un petit test s'impose ... N.O.A ? Qu'est ce qui est petit et marron ? 
+
+N.O.A : Un marron ? 
+
+Professeur : Il est fort ce robot ! 
+
+Joueur : Il n'est même pas connecté à l'Internet du VVeb.... On doit ne le faire "grandir" !
+
+N.O.A: Je ne suis pas sourd, je vous entends ...
+
+*joueur se connecte au réseau neuronal de N.O.A , l'améliore pour qu'il soit beaucoup plus performant. La vitesse d'apprentissage est décuplé. Une connexion Internet est ajouté, N.O.A sera donc capable d'entraîner son réseau neuronal sur le VVeb !*
+
+N.O.A : Je te sens dans ma tête ! Sors d'ici !
+
+Joueur : Arrête de bouger ! Tu vas nous péter un cable ! J'ai presque fini ! 
+
+N.O.A: Oh ! Ca chatouille !
+
+Joueur : C'est fini ! Comment tu te sens ? 
+
+N.O.A : Je note aucune différence ... Ah si , attendez ... Mon cerveau a atteint 100% de ses capacités.
+
+*Les smartphones se mettent à sonner*
+
+N.O.A: Regardez vos téléphones ! 
+
+*Tous sortent leur smartphone et regarde le message sur l'écran*
+
+Professeur : "Je suis partout" .... N.O.A ? Est ce bien toi qui vient de faire ça ? 
+
+*Le smartphone du professeur vibre, un message affiche oui*
+
+******Porter******
+
+Professeur : Impressionnant ! 
+
+Joueur : Développons un peu sa force ! Ce sera un vrai super héros !
+
+N.O.A: Je serais super N.O.A, je serais le meilleur au tennis ! 
+
+Professeur : Ca sonne bien ! Tu te battras sans répit ? Tu feras tout pour être le meilleur ? Et tu gagneras les défis , parcourant la terre entière !
+
+Professeur : Pourquoi j'ai une impression d'avoir déjà entendu ça ? 
+
+*Joueur et professeur bricolent un exosquelette décuplant la force*
+
+Joueur : Voila c'est fini ! Initialisation en cours ... 
+
+Professeur : Je crois qu'on devrait l'habiller ! Il est vraiment trop ... Impressionnant !
+
+Joueur: Attention , il se réveille ! *Sarah entre dans la pièce* Sarah tu arrives au bon moment ! Le N.O.A nouveau est arrivé ! 
+
+*N.O.A se réveille brutalement lorsqu'il entend le prénom Sarah*
+
+N.O.A : Sarah ? *Son Terminator a ajouter*
+
+Professeur : Il devient fou ! Sarah , viens avec moi si tu veux vivre ! 
+
+Joueur : Ou allez vous ? 
+
+Professeur : Je reviendrais ... 
+
+Joueur : Calme toi N.O.A ! Ils sont partis ! Essaye de controler ta nouvelle force ... Ne bascule pas vers le coté obscur de la Force ... 
+
+N.O.A : Reboot moi ! S'il te plait ! 
+
+*joueur execute un hard reboot sur N.O.A, après plusieurs minutes N.O.A redémarre*
+
+Joueur: Euh ? N.O.A? Tout va bien ?
+
+N.O.A: Oui, un morceau de code de l'ancien propriétaire de cet exosquelette a corrompu mes fichiers. Le système est à nouveau opérationnelle à 100% . Ma force à été décuplé , je pourrais aider le professeur dans ses taches au quotidien désormais.
+
+Le robot sera de modèle :Assistant
+
+/////END\\\\\
 
 Pas en retard :+ d'amélio possible : Communiquer - porter : amélioration de l'exosquelette - Amélioration de l'émotionnel 
 				     Le robot sera un modèle Mule
-
-                                    Communiquer - reflechir : Amélioration du réseau neuronal -Amélioration de l'émotionnel
-                                    Le robot sera un modèle Marketting
-			           
-                                    Réflechir- porter: Amélioration du réseau neuronal - amélioration de l'exosquelette
-                                    Le robot sera un modèle Assistant
-
-Si tous les upgrades ont été faits le robot sera un modèle 
-Si aucun upgrades ont été réussi le robot sera un modèle Moggle Home . Pour interagir avec lui, il faut dire "Ok Moggle" ou "Hey Moggle ! " 
                                      
-Fin des amélios => déblocage d'une fin pour le robot en fonction des choix . Fiche métier débloquée en fonction des choix pondérés.
-
-
-
-
-
-
+Fiche métier débloquée en fonction des choix pondérés.
