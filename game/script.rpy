@@ -260,13 +260,16 @@ label conf:
 
     menu:
 
-        "La conference sur les bases de données (memoire) !":          
+        "La conference sur les bases de données (memoire) !":  
+            a "Allons y"      
             jump retour_memoire
 
-        "La conference sur les divers language de programmation (deplacement) !":        
+        "La conference sur les divers language de programmation (deplacement) !":     
+            a "Allons y"
             jump retour_deplacement
 
         "La conference sur les serveurs (heure, date) !":
+            a "Allons y"
             jump retour_date
 
 
@@ -291,5 +294,57 @@ label retour_memoire:
     n "Bonjour et bienvenue, Je suis N.O.A ."
     a "Il s'exprime mieux la ? "
     d "Ton manque de foi me consterne."
+   
+
+label retour_deplacement:
+
+
+    scene bg laboratory
+    with dissolve
+    hide sphinx
+    show geek smiling at droite
+    show friend unhappy at gauche
+    show doc talking at middle  
+    l "Bon, nous sommes de retour, montrez nous le probleme de deplacement !"   
+    d "les capteurs de N.O.A sont défectueux ! Il ne peut pas se déplacer sans casser tout ou passer à travers un mur !"
+    a "Vous êtes sérieux ? Mais qu'est ce que c'est que ce robot ?"
+    d "Je crois que j'ai fait une erreur en copiant-codant trouvé sur internet"
+    l "Copier illegalement c'est mal !"
+    d "Je sais , j'aurais du coder moi même ! "
+    m "Je m'y connecte "
+    m "Euh ? mais ca a été codé avec les pieds !"
+    l "Bon , corrigeons ça, je vais le recoder ! "
+    a "Comme l'a dit je sais plus qui : Lève toi ! Et trace ta route ! "
+    d "Euh ? Tu es vraiment sûr de ta citation ?"
+    m "Bon, essayons maintenant"
+    d "Il se déplace correctement, c'est un miracle ! Merci mon dieu ! "
+   
+
+label retour_date:
+
+
+    scene bg laboratory
+    with dissolve
+    hide sphinx
+    show geek smiling at droite
+    show friend unhappy at gauche
+    show doc talking at middle 
+    l "Bon, voyons cela, N.O.A quelle heure est-il ? "   
+    n "Il est 36H66 !"
+    a "Hein ? Mais qu'est ce qu'il dit ? "
+    d "On dirait bien que la synchronysation avec le serveur n'est pas bonne ! Nous allons régler le soucis rapidement. "
+    m "Oui pas de problème !"
+    d "Regarde ! Je te l'avais dit ! L'heure locale est différente de l'heure serveur ! Le problème vient de la ! "
+    m "Je m'en occupe !"
+    menu:
+
+        "Je reconfigure l'heure locale du robot.":          
+            jump test
+
+        "Je reconfigure l'heure serveur.":        
+            jump test1
+
+    
+    
 
     return
