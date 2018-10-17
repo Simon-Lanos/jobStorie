@@ -7,7 +7,7 @@ Un véritable chef d'oeuvre technologique.
 Du moins sur le papier. En effet, la sortie de cette machine révolutionnaire fait un gros flop. 
 Personne ne cherche à obtenir ce bijou symbole de de l'évolution de l'IA. Pas étonant quand on sait que ce projet a été développer dans l'ombre d'un sous-sol.
 
-Ce savant, désepéré après ses longue année de dur travail, vient cherché votre aide ainsi que celle de votre groupe d'élite, pour tenter de redresser la situation...
+Ce savant, désepéré après ses longue année de dur travail, vient chercher votre aide ainsi que celle de votre groupe d'élite, pour tenter de redresser la situation...
 
 
 
@@ -42,23 +42,268 @@ Enfin rentré !
 Je vais pouvoir me détendre après cette journée de travail.
 
 
+1 - Communication de N.O.A
+
 (problème bdd, nanite gestion de mémoire défectueux, réparation par introduction de la méthode merise)
 Si bdd réparée, améliorations du language parlé du robot, sinon le robot s'exprimera comme un enfant de 5 ans.
 
+* N.O.A s'exprime dans un langage qui n'a aucun sens*
+
+Professeur :
+Comme vous le voyez , notre robot à un "léger" soucis de communication avec l'espèce humaine. En l'état, il est inutilisable. Je ne comprends vraiment pas ce qu'il se passe au niveau de sa base de données... Je pense que vous devriez y jeter un coup d'oeil.
+
+*Le joueur sort un pc et se connecte au robot*
+
+*Access Denied*
+
+Joueur: Ca ne marche pas ! Je n'ai pas les droits pour me connecter ! 
+
+Professeur: Tu as mal tapé le mot de passe que je t'ai envoyé ! 
+
+*Le joueur retape le mot de passe azerty123456*
+
+*Access Granted, Welcome Aboard ! *
+
+Joueur : Ah ! Ca y est ça marche !
+
+* Le joueur bidouille dans la base de données* 
+
+*******************  Choix *********************
+
+---------Bon Choix : La BDD est fixed, le robot s'exprime mieux ! ------
+
+N.O.A : Bonjour et bienvenue, Je suis N.O.A . 
+
+Joueur : Il s'exprime mieux la ? 
+
+Professeur : Ton manque de foi me consterne.
+
+N.O.A :Je maîtrise six millions de formes de communication.
+
+Joueur : Ce n’est pas parce que tu parles que tu es intelligent.
+
+Professeur : C'est vrai, qu'il ressemble à un gros sac de puces ! 
+
+N.O.A: J’ai les puces à l’air ! Oh, juste ciel !
+
+Professeur: Nous règlerons ça plus tard !
+
+N.O.A : Souhaitez vous que je vous apporte un rafraichissment ? 
+
+*****Transition*******
+
+--------- Mauvais choix: Les bugs sont toujours présents , N.O.A s'exprime comme un enfant de 5 ans --------
+
+N.O.A : Toi, tu es moche ! et tu pues ! 
+
+Professeur: C'est pas gagné ! 
+
+Joueur : C'est pas moi ! C'est mon doigt qui a glissé ! J'ai une petite faim ! N.O.A tu peux nous ramener un petit quelque chose ? 
+
+*****Transition*******
+
+
+
+2- Déplacement de N.O.A
+
 (problème path finding, capteurs foireux mauvaise interprétation des valeurs, fix des capteurs côté applicatif)
 Si fix ok , amélioration des performances de compréhension des valeurs, sinon le robot restera incapable d'évoluer dans un environenmment .  
+
+Professeur : Je crainds qu'il faille qu'on le fasse nous même ! malheuresement les capteurs de N.O.A sont défectueux ! Il ne peut pas se déplacer sans casser tout ou passer à travers un mur !
+
+Joueur : Vous êtes sérieux ? Mais qu'est ce que c'est que ce robot ? 
+
+Professeur : Je crois que j'ai fait une erreur en copiant-codant trouvé sur internet.
+
+Joueur : Copier illegalement c'est mal !
+
+Professeur : Je sais , j'aurais du coder moi même ! 
+
+*le joueur regarde le code*
+
+Joueur : Euh ? mais ca a été codé avec les pieds ! 
+
+Professeur : Je dirais même plus, avec une autre partie de l'anatomie ...
+
+Joueur : Bon , corrigeons ça ! 
+
+N.O.A : Je ressens une étrange sensation ... Comme des fourmis dans ma tête !
+
+Professeur : Ne t'inquiètes pas, ça ne durera pas longtemps!
+
+*******************  Choix *********************
+
+Joueur : Comme l'a dit je sais plus qui : Lève toi ! Et trace ta route ! 
+
+Professeur : Euh ? Tu es vraiment sûr de ta citation ?
+
+Joueur : Pourquoi ? c'est pas la bonne ? 
+
+Professeur : Pas vraiment , mais passons ... 
+
+---------Bon Choix : la qualité du code est meilleure, les valeurs renvoyées par les capteurs sont bien interprétées , permettant le déplacement du robot ------
+
+N.O.A : Je me déplace, c'est un miracle ! Merci mon dieu ! 
+
+Joueur : Appelles moi Joueur , ça ira !
+
+N.O.A : Très bien, j'associe *Joueur* à un statut divin.
+
+Professeur: N'en fais pas trop non plus ! C'est pas compliqué le code ! 
+
+Joueur : Je vais être en retard . N.O.A quelle heure est il ? 
+
+
+---------Mauvais Choix : la qualité du code est toujours aussi mauvaise, les valeurs renvoyées par les capteurs  ne sont toujours pas bien interprétées , ne permettant pas le déplacement du robot ------
+
+N.O.A : Je ne comprends pas ... Est ce que je me déplace ? 
+
+Professeur: Non , toujours pas ! Le fix n'as pas fonctionné ...
+
+Joueur: On aura essayé ... On va bien lui trouver une fonction à ce tas de ferrailles! Un pot de fleur qui parle c'est bien non ?
+
+Professeur : Ca fait cher le pot de fleur ! 
+
+Joueur : Et une horloge parlante ? N.O.A quelle heure est-il ? 
+ 
+
+
+
+3 - Configuration de N.O.A
+
+N.O.A : Il est 36H66 !
+
+Joueur: Hein ? Mais qu'est ce qu'il dit ? 
+
+Professeur : On dirait bien que la synchronysation avec le serveur ne soit pas bonne ! Nous allons régler le soucis rapidement. 
+*joueur* tu veux bien reconnecter ton pc ? 
+
+Joueur : Oui pas de problème !
+
+*Le joueur reconnecte son pc à la machine*
+
+Professeur : Regardes ! Je te l'avais dit ! L'heure locale est différente de l'heure serveur ! Le problème vient de la ! Reconfigures la ! 
+
+*******************  Choix *********************
+
+Choix 1 : Le joueur reconfigure l'heure locale du robot.
+
+Choix 2 : Le joueur reconfigure l'heure serveur.
+
+Joueur : Voila c'est fait ! C'etait vraiment très simple ! 
+
+Professeur: On a assez travaillé pour aujourd'hui ! Rentre chez toi ! Demain il y a les conférences , tu ne dois pas les manquer ! N.O.A t'enverra une notification pour te réveiller.
+
+N.O.A : C'est noté ! Je réveille *joueur* demain matin.
+
+Joueur: Wow ! c'est génial !
+
+\* Si le joueur à reconfigurer l'heure du robot, N.O.A le réveillera à l'heure pour assister aux conférences.Si le joueur a reconfiguer l'heure serveur, N.O.A le réveillera en retard, déclanchant l'event timer sur le choix des conférences */
+
 
 (problème GPS, décalage heure local et heure satellite synchro imposible, reconfiguration de l'heure)
 Si bonne synchro, pas de timer lors des conférences, le joueur arrive à l'heure, si mauvaise synchro l'horloge est mal configuré,
 le joueur est en retard, déclenchement du timer conférence.
 
-(conférence A,)
+**************************Le lendemain : Conference time***********************************************
 
-(Conférence B,)
+(conférence A,) Titre et contenu à trouver
 
-(Conférence C,)
+(Conférence B,) Titre et contenu à trouver
+
+(Conférence C,) Titre et contenu à trouver
 
 /!\ La conférence visionné n'a pas d'influence sur la fin de la partie ! /!\
+
+*********************************Le lendemain ****************************************************
+
+Professeur : Alors ces conférences ? Tu as appris de nouvelles choses ? Ou c'était du genre barbant ? 
+
+Joueur: Vraiment intéressant ! j'ai eu de nouvelles idées pour améliorer N.O.A ! 
+
+Professeur : Voyons ça ! 
+
+***********************************SI JOUEUR EN RETARD AUX CONF'**********************************************
+
+\* Le joueur n'as pas pu entendre la totalité des informations , il a donc des possibilités d'améliorations restreintes */
+
+Joueur : Nous devrions améliorer la communication ou le système de réflexion de N.O.A ! 
+
+********************** choix************************************
+
+******Communication : *********
+
+Joueur: N.O.A est froid 
+
+N.O.A : Mon CPU est actuellement à 75°C , je ne suis pas froid !
+
+Joueur : Pas froid en témpérature ... Froid dans ton approche ! Tu parles comme un robot ! Regarde ! Réponds à ma question : "C'est une bonne situation robot ?"
+
+N.O.A: Mais je suis un robot, je n'ai pas de situation . 
+
+Professeur : Tu as raison ! Changeons ça , c'est vrai que ta façon de parler n'est pas des plus naturelle ! 
+
+Joueur : Au travail ! 
+
+*joueur modifie dans la base de données le dictionnaire de mot employé par N.O.A, N.O.A sera aussi capable de ressentir les émotions des humains avec qui il évolue*
+
+N.O.A : Je me sens ... différent.
+
+Joueur : C'est normal ! Ca va être un peu déroutant pour toi ! Faisons un test . Réponds à ma question : "C'est une bonne situation robot ?"
+
+N.O.A: Vous savez, moi je ne crois pas qu’il y ait de bonne ou de mauvaise situation. Moi, si je devais résumer ma vie aujourd’hui avec vous, je dirais que c’est d’abord des rencontres. Des gens qui m’ont tendu la main, peut-être à un moment où je ne pouvais pas, où j’étais seul chez moi. Et c’est assez curieux de se dire que les hasards, les rencontres forgent une destinée... Parce que quand on a le goût de la chose, quand on a le goût de la chose bien faite, le beau geste, parfois on ne trouve pas l’interlocuteur en face je dirais, le miroir qui vous aide à avancer. Alors ça n’est pas mon cas, comme je disais là, puisque moi au contraire, j’ai pu : et je dis merci à la vie, je lui dis merci, je chante la vie, je danse la vie... je ne suis qu’amour ! Et finalement, quand beaucoup de gens aujourd’hui me disent « Mais comment fais-tu pour avoir cette humanité ? », et bien je leur réponds très simplement, je leur dis que c’est ce goût de l’amour ce goût donc qui m’a poussé aujourd’hui à entreprendre une construction mécanique, mais demain qui sait ? Peut-être simplement à me mettre au service de la communauté, à faire le don, le don de soi...
+
+Professeur : Mon Dieu ! Qu'avons nous fait ? On a pas été un peu trop loin ? 
+
+Joueur : Non ! c'est juste le temps qu'il s'habitue à ces nouvelles fonctions.
+
+/////END\\\\\ 
+
+
+******Réflexion:**********
+
+Joueur : N.O.A n'est pas très malin, il est un peu long à apprendre. On devrait améliorer son système neuronal.
+
+Professeur : Il est encore jeune. 
+
+Joueur : Un petit test s'impose ... N.O.A ? Qu'est ce qui est petit et marron ? 
+
+N.O.A : Un marron ? 
+
+Professeur : Il est fort ce robot ! 
+
+Joueur : Il n'est même pas connecté à l'Internet du VVeb.... On doit ne le faire "grandir" !
+
+N.O.A: Je ne suis pas sourd, je vous entends ...
+
+*joueur se connecte au réseau neuronal de N.O.A , l'améliore pour qu'il soit beaucoup plus performant. La vitesse d'apprentissage est décuplé. Une connexion Internet est ajouté, N.O.A sera donc capable d'entraîner son réseau neuronal sur le VVeb !*
+
+N.O.A : Je te sens dans ma tête ! Sors d'ici !
+
+Joueur : Arrête de bouger ! Tu vas nous péter un cable ! J'ai presque fini ! 
+
+N.O.A: Oh ! Ca chatouille !
+
+Joueur : C'est fini ! Comment tu te sens ? 
+
+N.O.A : Je note aucune différence ... Ah si , attendez ... Mon cerveau a atteint 100% de ses capacités.
+
+*Les smartphones se mettent à sonner*
+
+N.O.A: Regardez vos téléphones ! 
+
+*Tous sortent leur smartphone et regarde le message sur l'écran*
+
+Professeur : "Je suis partout" .... N.O.A ? Est ce bien toi qui vient de faire ça ? 
+
+*Le smartphone du professeur vibre, un message affiche oui*
+/////END\\\\\
+
+
+***********************************SI JOUEUR  PAS EN RETARD AUX CONF'**********************************************
+
+
+\* Si le joueur n'était pas en retard , il a appris plus de choses , il débloque plus d'améliorations disponibles ! */
 
 
 Au retour des conférences, de nouvelles améliorations sont disponibles : 
@@ -81,9 +326,11 @@ Pas en retard :+ d'amélio possible : Communiquer - porter : amélioration de l'ex
                                     Le robot sera un modèle Assistant
 
 Si tous les upgrades ont été faits le robot sera un modèle 
-Si aucun upgrades ont été réussi le robot sera un modèle Taggle Home . Pour interagir avec lui, il faut dire "Ok Taggle" ou "Hey Taggle ! " 
+Si aucun upgrades ont été réussi le robot sera un modèle Moggle Home . Pour interagir avec lui, il faut dire "Ok Moggle" ou "Hey Moggle ! " 
                                      
 Fin des amélios => déblocage d'une fin pour le robot en fonction des choix . Fiche métier débloquée en fonction des choix pondérés.
+
+
 
 
 
