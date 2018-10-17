@@ -7,9 +7,10 @@
 define e = Character('Barnes', color="#1fe3d7")
 define g = Character('Lux', color="#6eb0c9")
 define m = Character('Moi', color="#ffff00")
-define l = Character('Shauwn', color="#bdb755")
+define l = Character('Shawn', color="#bdb755")
 define a = Character('Sara', color="#e77354")
-define d = Character('Doc', color="#8cc4f4")
+define d = Character('Doc Tanaka', color="#8cc4f4")
+define s = Character('Sphinx', color="#612b5a")
 
 transform droite:
     xalign 0.75
@@ -19,13 +20,24 @@ transform gauche:
     xalign 0.20
     yalign 0.99
 
-transform center:
-    xalign 0.20
-    yalign 0.99
+transform middle:
+    xalign 0.50
+    yalign 0.90
+
+   
 
 style fiche:
     color '#ed6309'
     bold True
+
+style fiche1:
+    color '#a8f29c'
+    bold True
+
+style fiche2:
+    color '#e7b039'
+    bold True    
+
 
 # Le jeu commence ici
 label start:
@@ -33,34 +45,34 @@ label start:
     scene bg street
 
     show lux gigling at gauche
-    with moveinleft
+    
 
-    g "Bienvenue sur ......, je suis lux la {=fiche}speakerine{/color}."
+    g "Bienvenue sur JobStorie, je suis lux la {=fiche}speakerine{/color}."
 
     g "Je suis la narratrice mais aussi l'un des personnages de cette story !"
 
 
     menu:
 
-        "coucou lux !":
+        "Coucou lux !":
             jump reponse1
 
-        "Va te faire voir !":
+        "Ou sommes nous !":
             jump reponse2
 
 label reponse1:
 
-    g "Puisque nous en sommes aux présentations, je vais t'en apprendre un peu plus sur toi !"
+    g "Puisque nous en sommes aux présentations, laisse moi te dire ce que tu fais la !"
     jump suite
 
 label reponse2:
 
-    g "toi d'abord !"
+    g "Dans une {=fiche1}visual novel{/color} qui te mènera peut-etre vers ton avenir !"
     jump suite
 
 label suite:
 
-    g "Tu es donc le personnage principal de cette histoire, tout tes choix influeront sur la fin !"
+    g "Tu es le personnage principal de cette histoire, tout tes choix influeront sur la fin !"
 
     menu:
 
@@ -100,7 +112,7 @@ label reponse6:
 label suite2:
 
     g "Sache aussi que je t'enverrais des informations de temps en temps pour te permettre de comprendre certains termes et technos  !"
-    g "Enfin bref tu verra bien, il est temps pour toi de commencer l'histoire, à + !"
+    g "Enfin bref tu verra bien, il est temps pour toi de commencer l'histoire, à plus !"
     jump history
 
 label history:  
@@ -119,17 +131,22 @@ label history:
     show friend unhappy at gauche
     with moveinleft
 
-    a "Vous avez entendu parler de cet évenement sur les nouvelles technologies ?"
-    l "Oui, mais on n'a pas que ça à faire !"
-    a "Et toi, qu'en pense tu ?"
+    a "Vous avez entendu parler de cet évenement sur les {=fiche2}nouvelles technologies{/color} ?"
+    show geek think at droite
+    l "Le doc nous a appellé, il faut y aller !"
+    a "Et toi, que veut tu faire ?"
 
     menu:
 
         "Bof, on a mieux à faire !":
+            a "Tant pis"
             jump acte1
 
         "Si ça te fais plaisir !":
+            a "Allons y"
             jump acte1
+
+
         
 
 label acte1:  
@@ -147,27 +164,35 @@ label acte1:
     show geek smiling at droite
     with moveinright
 
-    l "Il est bugué ce robot, je ne vois pas quoi en faire !"
+    l "Il est buggé ce robot, je ne vois pas quoi en faire !"
 
     show friend unhappy at gauche
     with moveinleft
+    
 
     a "Et ne parlons meme pas de son design, c'est une catastrophe !"
+
+    show doc talking at middle
+    with moveinleft
+    
     d "Le probleme c'est le public, je suis très mauvais communicant"
-    l "Il va falloir choisir ou commencer, qu'en pense tu ?"
+    show geek think at droite
+
+    l "Il va bien falloir commencer par quelque chose, qu'en pense tu ?"
 
     menu:
+    
 
         "Il faut s'occuper des problèmes techniques !":
             l "Bon choix, partons la dessus !"
             jump dev
 
         "Il faut le rendre présentable et plus ergonomique !":
-            l "Bon choix, partons la dessus !"
+            a "Bon choix, partons la dessus !"
             jump non
 
-        "Il faut commencer pas seduire la communautée !":
-            l "Bon choix, partons la dessus !"
+        "Il faut commencer par seduire la communauté !":
+            d "Bon choix, partons la dessus !"
             jump non
 
 
@@ -175,6 +200,7 @@ label non:
 
     hide geek
     hide friend
+    hide doc
     show lux gigling at gauche
     with moveinleft  
 
@@ -185,8 +211,51 @@ label non:
 
 label dev:    
 
+    hide lux
+    show geek smiling at droite
+    show friend unhappy at gauche
+    show doc talking at middle
+
     a "Excelent, nous allons donc nous attaquer à la techno en premier !"
-   
+    d "Mais la encore, nous avons des choix à faire, j'ai fais une liste de ses principaux disfonctionnements"
+    show friend reading at gauche
+    a "Je vais la lire : - Le modèle NOA a une memoire defectueuse et s'exprime comme un enfant de 5 ans"
+    a "- Incapable d'evoluer dans son environnement, il se cogne à tout les meubles"
+    a "- L'heure, les coordonnées GPS et satellitaires sont defaillants"
+
+    menu:
+
+        "Il faut commencer par la mémoire !":          
+            jump conf
+
+        "Le déplacement me semble primordial !":        
+            jump conf
+
+        "L'heure et les coordonnées bien sur !":
+            jump conf
+
+label conf: 
+
+    l "Tres bien, mais comment fais on, on y connait rien ?"
+    show friend unhappy at gauche
+    a "La conférence !!!"
+    l "J'imagine que ca vaut le coup d'essayer "
+
+    hide geek
+    hide friend
+    scene bg conf
+    with dissolve
+
+    l "......"
+    a "Euh, ca fait un peu cossu pour une conference sur la technologie !"
+
+    show sphinx asking at middle
+    with moveinleft
+    s "De quoi parlez vous,il n'y a rien d'anormal ici !"
+    l "Si vous, pour commencer ! c'est du cosplay ? "
+    s "Non, je suis le sphinx, et vous devez répondre à ma question pour passer"
+    s "Vous allez devoir choisir une des trois conférences"
+
 
 
 
