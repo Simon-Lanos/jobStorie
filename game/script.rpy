@@ -11,6 +11,7 @@ define l = Character('Shawn', color="#bdb755")
 define a = Character('Sara', color="#e77354")
 define d = Character('Doc Tanaka', color="#8cc4f4")
 define s = Character('Sphinx', color="#612b5a")
+define n = Character('NOA', color="#979191")
 
 transform droite:
     xalign 0.75
@@ -43,6 +44,7 @@ style fiche2:
 label start:
 
     scene bg street
+    with dissolve
 
     show lux gigling at gauche
     
@@ -256,9 +258,38 @@ label conf:
     s "Non, je suis le sphinx, et vous devez répondre à ma question pour passer"
     s "Vous allez devoir choisir une des trois conférences"
 
+    menu:
+
+        "La conference sur les bases de données (memoire) !":          
+            jump retour_memoire
+
+        "La conference sur les divers language de programmation (deplacement) !":        
+            jump retour_deplacement
+
+        "La conference sur les serveurs (heure, date) !":
+            jump retour_date
 
 
+label retour_memoire:           
+  
 
-
+    scene bg laboratory
+    with dissolve
+    hide sphinx
+    show geek smiling at droite
+    show friend unhappy at gauche
+    show doc talking at middle
+    l "Bon, nous sommes de retour, montrez nous le probleme de BDD !"
+    d "Comme vous le voyez , notre robot à un 'léger' soucis de communication avec l'espèce humaine."    
+    d "Je ne comprends pas ce qu'il se passe au niveau de sa base de données... Je pense que vous devriez y jeter un coup d'oeil."
+    m "Je me connecte"
+    m "Ca ne marche pas ! Je n'ai pas les droits pour me connecter ! "
+    d "Tu as mal tapé le mot de passe que je t'ai envoyé ! "
+    m "je retape le mot de passe azerty123456"
+    n "Access Granted, Welcome Aboard !"
+    d "Ah ! Ca y est ça marche !"
+    n "Bonjour et bienvenue, Je suis N.O.A ."
+    a "Il s'exprime mieux la ? "
+    d "Ton manque de foi me consterne."
 
     return
