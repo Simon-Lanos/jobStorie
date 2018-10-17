@@ -1525,7 +1525,31 @@ style slider_pref_slider:
     variant "small"
     xsize 600
 
+## screen d'icone de notif
 
+screen notif(first = False):
 
+    if first :
+        modal True
+        default first_time = True
+    else :
+        default first_time = False
 
+    zorder 100
 
+    showif first_time == True:
+        add "gui/nvl.png" xalign 0 yalign 0
+
+        vbox:
+            text gui.notif_text
+            align 0.35, 0.1
+            maximum 0.65, 0.9
+
+            button action SetScreenVariable("first_time", False):
+                background Image("gui/point.png")
+
+    button action ShowMenu("main_menu"):
+        align 0.05, 0.05
+        xysize 60, 60
+
+    add "gui/point.png" xalign 0.05 yalign 0.05

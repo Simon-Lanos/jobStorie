@@ -35,6 +35,18 @@ define config.version = "1.1"
 define gui.about = _p("""
 """)
 
+define gui.first_notif = True
+
+define gui.notif_text = _p("""Voici votre première fiche !
+
+    Les fiches sont des descriptif des différente notion qui serrons abordé
+    durant l'histoire. Elle se débloquerons au fur et à mesure que vous
+    avancerez dans le jeu.
+
+    Lorsque vous débloquez une fiche, l'icone avec le point d'éxclamation apparais
+    et une partie du texte est en surbrillance. En cliquant sur cette icone vous
+    pouvez accèder à la dernière fiche débloquez.
+""")
 
 ## Un nom court pour le jeu qui sera utilisé pour les répertoires et le nom de
 ## l’exécutable. Il ne doit contenir que des caractères ASCII et ne doit pas
