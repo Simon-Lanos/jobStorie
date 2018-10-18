@@ -437,18 +437,27 @@ label acte2:
     show doc talking at middle 
 
     d "Alors ces conférences ? Tu as appris de nouvelles choses ? Ou c'était du genre barbant ?"
-    l "Vraiment intéressant ! nous avons eu de nouvelles idées pour améliorer N.O.A !"
+    l "Vraiment intéressant ! nous avons eu de nouvelles idées pour améliorer N.O.A. !"
     a "Alors, que devons nous améliorer en premier ?"
 
     menu:
 
-        "Il faut améliorer la communication !":          
+        "Il faut améliorer la communication !":      
+            $ communication = True 
+            $ reflexion = False
+            $ force = False   
             jump acte2com
 
-        "Il faut améliorer sa réflexion !":        
+        "Il faut améliorer sa réflexion !":
+            $ communication = False 
+            $ reflexion = True
+            $ force = False   
             jump acte2ref
 
         "Il faut améliorer sa force !":
+            $ communication = False 
+            $ reflexion = False
+            $ force = True
             jump acte2force
 
 
@@ -466,13 +475,15 @@ label acte2com:
     n "Vous savez, moi je ne crois pas qu’il y ait de bonne ou de mauvaise situation......"
     d "Mon Dieu ! Qu'avons nous fait ? On a pas été un peu trop loin ? "
     l "Non ! c'est juste le temps qu'il s'habitue à ces nouvelles fonctions."
-    a "Parfait, nous pouvons l'améliorer encore une fois"
+    a "Parfait, pouvons nous l'améliorer encore une fois ?"
     menu:
 
-        "Il faut améliorer sa réflexion !":        
+        "Il faut améliorer sa réflexion !" if reflexion == False : 
+            $ reflexion = True       
             jump acte2ref
 
-        "Il faut améliorer sa force !":
+        "Il faut améliorer sa force !" if force == False :
+            $ force = True
             jump acte2force
 
 
@@ -498,13 +509,43 @@ label acte2force:
     m "Ca devrait allez cette fois !"
     n "Désolé, un morceau de code de l'ancien propriétaire de cet exosquelette a corrompu mes fichiers !"
     n "Le système est à nouveau opérationnelle à 100/100 . Je pourrais aider le professeur dans ses taches au quotidien désormais."
-    a "Parfait, nous pouvons l'améliorer encore une fois"
+    a "Parfait, pouvons nous l'améliorer encore une fois ?"
     menu:
 
-        "Il faut améliorer sa communication !":        
+        "Il faut améliorer sa communication !" if communication == False :
+            $ communication = True        
             jump acte2com
 
-        "Il faut améliorer sa reflexion !":
+        "Il faut améliorer sa reflexion !" if reflexion == False :
+            $ reflexion = True
             jump acte2ref
+
+
+label acte2ref:    
+
+    l "N.O.A n'est pas très malin, il est un peu long à apprendre. On devrait améliorer son système neuronal."   
+    d "Il est encore jeune." 
+    a "Un petit test s'impose ... N.O.A. ? Qu'est ce qui est petit et marron ?"
+    n "Un marron ?"
+    d "Il est fort ce robot !"
+    l "Il n'est même pas connecté à l'Internet du web.... On doit ne le faire \"grandir\" !"
+    n "Je ne suis pas sourd, je vous entends ..."
+    m "je me connecte au réseau neuronal de N.O.A, et l'améliore pour qu'il soit plus performant. La vitesse d'apprentissage est décuplé."
+    a "C'est fini ! Comment tu te sens ?"
+    n "Je note aucune différence ... Ah si , attendez ... Mon cerveau a atteint 100/100 de ses capacités."
+    m "Les smartphones se mettent tous à sonner !"
+    n "Regardez vos téléphones !"
+    d "\"Je suis partout\" .... N.O.A ? Est ce bien toi qui vient de faire ça ?"
+    a "Parfait, pouvons nous l'améliorer encore une fois ?"
+    menu:
+
+        "Il faut améliorer sa communication !" if communication == False :
+            $ communication = True        
+            jump acte2com
+
+        "Il faut améliorer sa force !" if force == False :
+            $ force = True
+            jump acte2ref
+
 
     return
