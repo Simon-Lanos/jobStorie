@@ -448,8 +448,10 @@ init python:
 
         ## Ajuste la position de la zone de texte.
         gui.textbox_height = 240
-        gui.name_xpos = 80
+        gui.name_xpos = 250
+        gui.name_ypos = 77
         gui.text_xpos = 90
+        gui.dialogue_ypos = 122
         gui.text_width = 1100
 
         ## Change the size and spacing of various things.

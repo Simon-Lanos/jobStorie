@@ -48,11 +48,13 @@ label start:
 
     show lux gigling at gauche
     
+    show screen notif(True)
 
     g "Bienvenue sur JobStorie, je suis lux la {=fiche}speakerine{/color}."
 
     g "Je suis la narratrice mais aussi l'un des personnages de cette story !"
 
+    hide screen notif
 
     menu:
 
@@ -73,6 +75,8 @@ label reponse2:
     jump suite
 
 label suite:
+
+    show screen notif()
 
     g "Tu es le personnage principal de cette histoire, tout tes choix influeront sur la fin !"
 
@@ -339,10 +343,10 @@ label retour_date:
     menu:
 
         "Je reconfigure l'heure locale du robot.":          
-            jump test
+            return
 
         "Je reconfigure l'heure serveur.":        
-            jump test1
+            return            
 
     
     
