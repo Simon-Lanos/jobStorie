@@ -130,17 +130,19 @@ label history:
 
     l "Il est temps de bouger, on a à faire !"
 
-    show friend unhappy at gauche
+    show friend happy at gauche
+   
     with moveinleft
 
     a "Vous avez entendu parler de cet évenement sur les {=fiche2}nouvelles technologies{/color} ?"
-    show geek think at droite
+    show geek hitting at droite
     l "Le doc nous a appellé, il faut y aller !"
     a "Et toi, que veut tu faire ?"
 
     menu:
 
         "Bof, on a mieux à faire !":
+            show friend unhappy at gauche
             a "Tant pis"
             jump acte1
 
@@ -168,7 +170,7 @@ label acte1:
 
     l "Il est buggé ce robot, je ne vois pas quoi en faire !"
 
-    show friend unhappy at gauche
+    show friend happy at gauche
     with moveinleft
     
 
@@ -214,7 +216,7 @@ label non:
 label dev:    
 
     hide lux
-    show geek smiling at droite
+    show geek think at droite
     show friend unhappy at gauche
     show doc talking at middle
 
@@ -239,7 +241,7 @@ label dev:
 label conf: 
 
     l "Tres bien, mais comment fais on, on y connait rien ?"
-    show friend unhappy at gauche
+    show friend happy at gauche
     a "La conférence !!!"
     l "J'imagine que ca vaut le coup d'essayer "
 
@@ -277,7 +279,7 @@ label retour_memoire:
   
 
     scene bg laboratory
-    with dissolve
+    with dissolve 
     hide sphinx
     show geek smiling at droite
     show friend unhappy at gauche
