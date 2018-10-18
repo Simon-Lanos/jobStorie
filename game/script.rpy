@@ -264,7 +264,7 @@ label conf:
     a "Euh, ca fait un peu cossu pour une conference sur la technologie !"
 
     show sphinx asking at middle
-    with moveinleft
+    with moveintop
     s "De quoi parlez vous,il n'y a rien d'anormal ici !"
     l "Si vous, pour commencer ! c'est du cosplay ? "
     s "Non, je suis le sphinx, et vous devez répondre à ma question pour passer"
