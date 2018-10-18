@@ -280,10 +280,6 @@ label conf:
             a "Allons y"
             jump retour_deplacement
 
-        "La conference sur les serveurs (heure, date) !":
-            a "Allons y"
-            jump retour_date
-
 
 label retour_memoire:           
   
@@ -300,7 +296,7 @@ label retour_memoire:
     m "Je me connecte"
     m "Ca ne marche pas ! Je n'ai pas les droits pour me connecter ! "
     d "Tu as mal tapé le mot de passe que je t'ai envoyé ! "
-    m "je retape le mot de passe azerty123456"
+    m "je retape le mot de passe a{w=0.4}z{w=0.4}e{w=0.4}r{w=0.4}t{w=0.4}y{w=0.4}1{w=0.4}2{w=0.4}3{w=0.4}4{w=0.4}5{w=0.4}6"
     n "Access Granted, Welcome Aboard !"
     d "Ah ! Ca y est ça marche !"
     n "Bonjour et bienvenue, Je suis N.O.A ."
@@ -380,16 +376,7 @@ label acte2retard:
     with moveinleft
 
     s "Vous etes arrivés en retard. Vous ne pourrez assistez qu'a une conférence !"
-    menu:
-
-        "conférence de communication améliorée !":          
-            jump acte2com
-
-        "conférence de réflexion !":        
-            jump acte2ref
-
-        "conférence de force !":
-            jump acte2force
+    l "C'est terrible, nous n'aurions pas du le configurer sur l'heure serveur, il nous a réveiller en retard"
 
     scene bg laboratory
     with dissolve
@@ -400,20 +387,27 @@ label acte2retard:
 
     d "Alors ces conférences ? Tu as appris de nouvelles choses ? Ou c'était du genre barbant ?"
     l "Vraiment intéressant ! nous avons eu de nouvelles idées pour améliorer N.O.A !"
-    a "Alors, que devons nous améliorer en premier ?"
+    a "Alors, que devons nous améliorer ?"
+    m "Nous n'avons pu suivre qu'un seule conférence ! nous ne pouvons l'améliorer que dans un seul domaine"
 
     menu:
 
-        "Il faut améliorer la communication !":     
-            $ choix = "communication"   
+        "Il faut améliorer la communication !":
+            $ communication = True 
+            $ reflexion = True
+            $ force = True      
             jump acte2com
 
-        "Il faut améliorer sa réflexion !": 
-            $ choix = "reflexion"   
+        "Il faut améliorer sa réflexion !":
+            $ communication = True 
+            $ reflexion = True
+            $ force = True  
             jump acte2ref
 
         "Il faut améliorer sa force !":
-            $ choix = "force"
+            $ communication = True 
+            $ reflexion = True
+            $ force = True 
             jump acte2force
 
 
@@ -485,6 +479,9 @@ label acte2com:
         "Il faut améliorer sa force !" if force == False :
             $ force = True
             jump acte2force
+        
+        "Je crois qu'on a fait tout notre possbile !" if force == True & communication == True & reflexion == True :
+            jump end
 
 
 
@@ -519,6 +516,9 @@ label acte2force:
         "Il faut améliorer sa reflexion !" if reflexion == False :
             $ reflexion = True
             jump acte2ref
+        
+        "Je crois qu'on a fait tout notre possbile !" if force == True & communication == True & reflexion == True :
+            jump end
 
 
 label acte2ref:    
@@ -545,7 +545,21 @@ label acte2ref:
 
         "Il faut améliorer sa force !" if force == False :
             $ force = True
-            jump acte2ref
+            jump acte2force
+        
+        "Je crois qu'on a fait tout notre possbile !" if force == True & communication == True & reflexion == True :
+            jump end
+
+
+label end:
+
+    hide geek
+    hide friend
+    hide doc
+    show lux gigling at gauche
+    with moveinleft
+    g "Pas mal !"            
+    g "Tes réponses m'ont menées a cette conclusion"
 
 
     return
