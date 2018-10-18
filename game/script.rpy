@@ -6,12 +6,12 @@
 # Déclarez les personnages utilisés dans le jeu.
 define e = Character('Barnes', color="#1fe3d7")
 define g = Character('Lux', color="#6eb0c9")
-define m = Character('Moi', color="#ffff00")
+define m = Character('[name!t]', color="#ffff00")
 define l = Character('Shawn', color="#bdb755")
 define a = Character('Sara', color="#e77354")
 define d = Character('Doc Tanaka', color="#8cc4f4")
 define s = Character('Sphinx', color="#612b5a")
-define n = Character('NOA', color="#979191")
+define n = Character('N.O.A.', color="#979191")
 
 transform droite:
     xalign 0.75
@@ -51,6 +51,12 @@ label start:
     show screen notif(True)
 
     g "Bienvenue sur JobStorie, je suis lux la {=fiche}speakerine{/color}."
+
+    python:
+        name = renpy.input(_("Quel est ton nom?"))
+
+        name = name.strip() or __("personne")
+ 
 
     g "Je suis la narratrice mais aussi l'un des personnages de cette story !"
 
@@ -300,6 +306,9 @@ label retour_memoire:
     n "Bonjour et bienvenue, Je suis N.O.A ."
     a "Il s'exprime mieux la ? "
     d "Ton manque de foi me consterne."
+    a "Bon, réglons aussi ce probleme d'horaire dans la foulée, ca pourrait servir !"
+
+    jump retour_date
    
 
 label retour_deplacement:
@@ -324,6 +333,11 @@ label retour_deplacement:
     d "Euh ? Tu es vraiment sûr de ta citation ?"
     m "Bon, essayons maintenant"
     d "Il se déplace correctement, c'est un miracle ! Merci mon dieu ! "
+    a "Bon, réglons aussi ce probleme d'horaire dans la foulée, ca pourrait servir !"
+
+    jump retour_date
+
+
    
 
 label retour_date:
@@ -344,13 +358,153 @@ label retour_date:
     m "Je m'en occupe !"
     menu:
 
-        "Je reconfigure l'heure locale du robot.":          
-            return
+        "Je reconfigure l'heure locale du robot.":
+            l "Super, il va nous servir de réveil pour demain !"  
+            a "Oui, il ne faudrait pas rater la deuxieme journée de conference, ce robot a encore besoin de nous"        
+            jump acte2  
 
-        "Je reconfigure l'heure serveur.":        
-            return            
+        "Je reconfigure l'heure serveur.":    
+            l "Super, il va nous servir de réveil pour demain !"  
+            a "Oui, il ne faudrait pas rater la deuxieme journée de conference, ce robot a encore besoin de nous"    
+            jump acte2retard    
+                  
 
-    
-    
+label acte2retard:
+
+
+    hide geek
+    hide friend
+    scene bg conf
+    with dissolve
+    show sphinx asking at middle
+    with moveinleft
+
+    s "Vous etes arrivés en retard. Vous ne pourrez assistez qu'a une conférence !"
+    menu:
+
+        "conférence de communication améliorée !":          
+            jump acte2com
+
+        "conférence de réflexion !":        
+            jump acte2ref
+
+        "conférence de force !":
+            jump acte2force
+
+    scene bg laboratory
+    with dissolve
+    hide sphinx
+    show geek smiling at droite
+    show friend unhappy at gauche
+    show doc talking at middle 
+
+    d "Alors ces conférences ? Tu as appris de nouvelles choses ? Ou c'était du genre barbant ?"
+    l "Vraiment intéressant ! nous avons eu de nouvelles idées pour améliorer N.O.A !"
+    a "Alors, que devons nous améliorer en premier ?"
+
+    menu:
+
+        "Il faut améliorer la communication !":     
+            $ choix = "communication"   
+            jump acte2com
+
+        "Il faut améliorer sa réflexion !": 
+            $ choix = "reflexion"   
+            jump acte2ref
+
+        "Il faut améliorer sa force !":
+            $ choix = "force"
+            jump acte2force
+
+
+
+label acte2: 
+
+    hide geek
+    hide friend
+    scene bg conf
+    with dissolve
+    show sphinx asking at middle
+    with moveinleft
+
+    s "Vous etes revenus, et à l'heure. Vous pourrez assister à toutes les conférences, allez y !"
+
+    scene bg laboratory
+    with dissolve
+    hide sphinx
+    show geek smiling at droite
+    show friend unhappy at gauche
+    show doc talking at middle 
+
+    d "Alors ces conférences ? Tu as appris de nouvelles choses ? Ou c'était du genre barbant ?"
+    l "Vraiment intéressant ! nous avons eu de nouvelles idées pour améliorer N.O.A !"
+    a "Alors, que devons nous améliorer en premier ?"
+
+    menu:
+
+        "Il faut améliorer la communication !":          
+            jump acte2com
+
+        "Il faut améliorer sa réflexion !":        
+            jump acte2ref
+
+        "Il faut améliorer sa force !":
+            jump acte2force
+
+
+label acte2com:   
+
+    a "N.O.A est froid !"
+    n "Mon CPU est actuellement à 75°C , je ne suis pas froid !"
+    a "Froid dans ton approche ! Tu parles comme un robot ! Regarde  : \"C'est une bonne situation robot ?\" "
+    n "Mais je suis un robot, je n'ai pas de situation ."
+    d "Tu as raison ! Changeons ça , c'est vrai que ta façon de parler n'est pas des plus naturelle ! "
+    l "il faut modifier dans la base de données le dictionnaire de mot employé par N.O.A !"
+    a "et il sera capable de ressentir les émotions des humains avec qui il évolue !"
+    n "Je me sens ... différent !"
+    a "C'est normal ! Ca va être un peu déroutant pour toi ! Réponds à ma question : \"C'est une bonne situation robot ?\""
+    n "Vous savez, moi je ne crois pas qu’il y ait de bonne ou de mauvaise situation......"
+    d "Mon Dieu ! Qu'avons nous fait ? On a pas été un peu trop loin ? "
+    l "Non ! c'est juste le temps qu'il s'habitue à ces nouvelles fonctions."
+    a "Parfait, nous pouvons l'améliorer encore une fois"
+    menu:
+
+        "Il faut améliorer sa réflexion !":        
+            jump acte2ref
+
+        "Il faut améliorer sa force !":
+            jump acte2force
+
+
+
+label acte2force:
+
+    l "Développons un peu sa force ! Ce sera un vrai super héros !"
+    a "Ah, ca ne m'interesse pas, je reviendrais plus tard !"
+    hide friend 
+    with moveoutleft
+    n "Je serais super N.O.A, je serais le meilleur au tennis ! "
+    d "Ca sonne bien ! Tu te battras sans répit ? Tu feras tout pour être le meilleur ? Et tu gagneras les défis , parcourant la terre entière !"
+    l "Branchons nous, il faut créer un exosquelette décuplant la force"
+    m "Voila c'est fini ! Initialisation en cours ... "
+    d "Je crois qu'on devrait l'habiller ! Il est vraiment trop ... Impressionnant !"
+    show friend unhappy at gauche
+    with moveinleft
+    l "Attention , il se réveille ! Sara tu arrives au bon moment ! Le N.O.A. nouveau est arrivé ! "
+    n "Sarah connor ?"
+    d "Il s'énerve ! rebootez le vite !"
+    l "C'est pas passer loin !"
+    a "Serieusement ?"
+    m "Ca devrait allez cette fois !"
+    n "Désolé, un morceau de code de l'ancien propriétaire de cet exosquelette a corrompu mes fichiers !"
+    n "Le système est à nouveau opérationnelle à 100/100 . Je pourrais aider le professeur dans ses taches au quotidien désormais."
+    a "Parfait, nous pouvons l'améliorer encore une fois"
+    menu:
+
+        "Il faut améliorer sa communication !":        
+            jump acte2com
+
+        "Il faut améliorer sa reflexion !":
+            jump acte2ref
 
     return
