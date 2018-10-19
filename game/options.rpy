@@ -245,4 +245,4 @@ Voici la 1ere fiche"""
 define gui.php_fiche_title = "PHP"
 
 define gui.php_fiche = """
-Voici la fiche PHP"""
+PHP est un language de programation ..."""

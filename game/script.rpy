@@ -25,20 +25,9 @@ transform middle:
     xalign 0.50
     yalign 0.90
 
-   
-
 style fiche:
     color '#ed6309'
     bold True
-
-style fiche1:
-    color '#a8f29c'
-    bold True
-
-style fiche2:
-    color '#e7b039'
-    bold True    
-
 
 # Le jeu commence ici
 label start:
@@ -50,7 +39,7 @@ label start:
     
     show screen notif(None, None, True)
 
-    g "Bienvenue sur JobStorie, je suis lux la {=fiche}speakerine{/color}."
+    g "Bienvenue sur JobStorie, je suis lux la {=fiche}narratrice{/color}."
 
     python:
         name = renpy.input(_("Quel est ton nom?"))

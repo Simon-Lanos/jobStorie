@@ -1547,8 +1547,8 @@ screen notif(fiche = None, title = None , first = False):
             align 0.35, 0.1
             maximum 0.65, 0.9
 
-            button action SetScreenVariable("first_time", False):
-                background Image("gui/point.png")
+        button action SetScreenVariable("first_time", False):
+            align 0, 0
 
     button action ShowMenu("fiche", fiche, title):
         align 0.05, 0.05
