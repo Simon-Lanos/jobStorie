@@ -32,7 +32,7 @@ define gui.idle_color = '#888888'
 
 ## La petite couleur est utilisé pour les textes courts qui nécessitent d’être
 ## assombris ou éclairés pour obtenir le même effet.
-define gui.idle_small_color = '#aaaaaa'
+define gui.idle_small_color = '#000000'
 
 ## Cette couleur est utilisée pour les boutons et les barres qui sont survolées.
 define gui.hover_color = '#66c1e0'
@@ -44,7 +44,7 @@ define gui.selected_color = '#ffffff'
 
 ## La couleur utilisée pour le texte d’un bouton qui ne peut pas être
 ## sélectionné.
-define gui.insensitive_color = '#8888887f'
+define gui.insensitive_color = '#0000007f'
 
 ## Couleurs utilisées pour les portions de barres qui ne sont pas remplies.
 ## Elles ne sont pas utilisées directement, mais quand les fichiers d’images

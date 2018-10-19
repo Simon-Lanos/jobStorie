@@ -1529,8 +1529,6 @@ style slider_pref_slider:
 
 screen notif(fiche = None, title = None , first = False):
 
-    tag fiche
-
     if first :
         modal True
         default first_time = True
@@ -1558,8 +1556,6 @@ screen notif(fiche = None, title = None , first = False):
 
 screen fiche(fiche, title):
 
-    tag fiche
-    
     if fiche == None:
         default loaded_fiche = gui.default_fiche
         default loaded_title = gui.default_fiche_title
