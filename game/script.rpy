@@ -48,7 +48,7 @@ label start:
 
     show lux gigling at gauche
     
-    show screen notif(True)
+    show screen notif(None, None, True)
 
     g "Bienvenue sur JobStorie, je suis lux la {=fiche}speakerine{/color}."
 
@@ -82,7 +82,7 @@ label reponse2:
 
 label suite:
 
-    show screen notif()
+    show screen notif(gui.php_fiche, gui.php_fiche_title)
 
     g "Tu es le personnage principal de cette histoire, tout tes choix influeront sur la fin !"
 

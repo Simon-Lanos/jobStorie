@@ -1527,7 +1527,9 @@ style slider_pref_slider:
 
 ## screen d'icone de notif
 
-screen notif(first = False):
+screen notif(fiche = None, title = None , first = False):
+
+    tag fiche
 
     if first :
         modal True
@@ -1548,8 +1550,42 @@ screen notif(first = False):
             button action SetScreenVariable("first_time", False):
                 background Image("gui/point.png")
 
-    button action ShowMenu("main_menu"):
+    button action ShowMenu("fiche", fiche, title):
         align 0.05, 0.05
         xysize 60, 60
 
     add "gui/point.png" xalign 0.05 yalign 0.05
+
+screen fiche(fiche, title):
+
+    tag fiche
+    
+    if fiche == None:
+        default loaded_fiche = gui.default_fiche
+        default loaded_title = gui.default_fiche_title
+    else:
+        default loaded_fiche = fiche
+        default loaded_title = title
+
+    hbox:
+        
+        frame:
+
+            xminimum 0.25
+            yminimum 1.0
+
+            vbox:
+
+                text "Navigation"
+                textbutton _("Retour"):
+                    action Return()
+
+        frame:
+
+            xminimum 1.0
+            yminimum 1.0
+
+            label loaded_title
+
+            text loaded_fiche
+

@@ -236,3 +236,13 @@ init python:
 ## slash.
 
 # define build.itch_project = "renpytom/test-project"
+
+define gui.default_fiche_title = "Première"
+
+define gui.default_fiche = """
+Voici la 1ere fiche"""
+
+define gui.php_fiche_title = "PHP"
+
+define gui.php_fiche = """
+Voici la fiche PHP"""
