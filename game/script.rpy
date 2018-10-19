@@ -37,7 +37,7 @@ label start:
 
     show lux gigling at gauche
     
-    show screen notif(None, None, True)
+    
 
     g "Bienvenue sur JobStorie, je suis lux la {=fiche}narratrice{/color}."
 
@@ -71,7 +71,6 @@ label reponse2:
 
 label suite:
 
-    show screen notif(gui.php_fiche, gui.php_fiche_title)
 
     g "Tu es le personnage principal de cette histoire, tout tes choix influeront sur la fin !"
 
@@ -112,7 +111,8 @@ label reponse6:
 
 label suite2:
 
-    g "Sache aussi que je t'enverrais des informations de temps en temps pour te permettre de comprendre certains termes et technos  !"
+    g "Sache aussi que je t'enverrais des informations de temps en temps pour te permettre de comprendre certains termes et technos, comme celle la  !"
+    show screen notif(None, None, True)
     g "Enfin bref tu verra bien, il est temps pour toi de commencer l'histoire, à plus !"
     jump history
 
@@ -188,14 +188,17 @@ label acte1:
 
         "Il faut s'occuper des problèmes techniques !":
             l "Bon choix, partons la dessus !"
+            $ dev = True 
             jump dev
 
         "Il faut le rendre présentable et plus ergonomique !":
             a "Bon choix, partons la dessus !"
+            $ design = True 
             jump non
 
         "Il faut commencer par seduire la communauté !":
             d "Bon choix, partons la dessus !"
+            $ market = True 
             jump non
 
 
@@ -548,7 +551,8 @@ label end:
     show lux gigling at gauche
     with moveinleft
     g "Pas mal !"            
-    g "Tes réponses m'ont menées a cette conclusion"
-
+    g "Tes réponses m'ont menées a une conclusion"
+    g "Tu devrais t'orienter vers le métiers de {=fiche1}Développeur de base de données{/color}"
+ 
 
     return
