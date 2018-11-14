@@ -6,7 +6,7 @@
 # Déclarez les personnages utilisés dans le jeu.
 define e = Character('Barnes', color="#1fe3d7")
 define g = Character('Lux', color="#6eb0c9")
-define m = Character('[name!t]', color="#ffff00")
+define m = Character('[name!t]', color="#339933")
 define l = Character('Shawn', color="#bdb755")
 define a = Character('Sara', color="#e77354")
 define d = Character('Doc Tanaka', color="#8cc4f4")
@@ -65,7 +65,7 @@ label start:
         name = name.strip() or __("personne")
  
 
-    g "Je suis la narratrice mais aussi l'un des personnages de cette story !"
+    g "Bonjour [name!t] ! Je suis la narratrice mais aussi l'un des personnages de cette story !"
 
     hide screen notif
 
@@ -129,10 +129,16 @@ label reponse6:
 
 label suite2:
 
+<<<<<<< HEAD
     g "Sache aussi que je t'enverrais des informations de temps en temps pour te permettre de comprendre certains termes et technos !"
    
+=======
+    g "Sache aussi que je t'enverrais des informations de temps en temps."
+    g "Pour te permettre de comprendre certains termes et technos."
+>>>>>>> develop
     show screen notif(None, None, True)
     g "Enfin bref tu verra bien, il est temps pour toi de commencer l'histoire, à plus !"
+    hide screen notif
     jump history
 
 label history:  
@@ -153,7 +159,11 @@ label history:
     with moveinleft
 
     a "Vous avez entendu parler de cet évenement sur les nouvelles technologies ?"
+<<<<<<< HEAD
     show geek bulle at droite
+=======
+    show geek hitting at droite
+>>>>>>> develop
     l "Le doc nous a appellé, il faut y aller !"
     show screen notif(1, None, False)
     a "Et toi, que veut tu faire ?"
