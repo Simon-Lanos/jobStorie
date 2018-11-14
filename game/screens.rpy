@@ -245,22 +245,6 @@ screen quick_menu():
     ## Ensure this appears on top of other screens.
     zorder 100
 
-    if quick_menu:
-
-        hbox:
-            style_prefix "quick"
-
-            xalign 0.5
-            yalign 1.0
-
-            textbutton _("Retour") action Rollback()
-            textbutton _("Historique") action ShowMenu('history')
-            textbutton _("Avance rapide") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Sauvegarde") action ShowMenu('save')
-            textbutton _("Sauvegarde R.") action QuickSave()
-            textbutton _("Chargement R.") action QuickLoad()
-            textbutton _("Préf.") action ShowMenu('preferences')
 
 
 ## Ce code garantit que le menu d’accès rapide sera affiché dans le jeu, tant
@@ -321,7 +305,7 @@ screen navigation():
 
             textbutton _("Menu principal") action MainMenu()
 
-        textbutton _("À propos") action ShowMenu("about")
+       
 
         if renpy.variant("pc"):
 
@@ -1559,29 +1543,38 @@ screen fiche(fiche, title):
     if fiche == None:
         default loaded_fiche = gui.default_fiche
         default loaded_title = gui.default_fiche_title
-    else:
-        default loaded_fiche = fiche
-        default loaded_title = title
+    if fiche == 1:
+        default loaded_fiche = gui.php_fiche
+        default loaded_title = gui.php_fiche_title
+    if fiche == 2:
+        default loaded_fiche = gui.html_fiche
+        default loaded_title = gui.html_fiche_title
+    if fiche == 3:
+        default loaded_fiche = gui.js_fiche
+        default loaded_title = gui.js_fiche_title
+    if fiche == 4:
+        default loaded_fiche = gui.market_fiche
+        default loaded_title = gui.market_fiche_title           
 
     hbox:
         
         frame:
 
-            xminimum 0.25
-            yminimum 1.0
+            xminimum 1
+            yminimum 0.4
+          
 
             vbox:
 
-                text "Navigation"
-                textbutton _("Retour"):
+                label loaded_title
+                textbutton _("Retour au jeu"):
                     action Return()
+                null height 30
+                
 
-        frame:
+                text loaded_fiche
 
-            xminimum 1.0
-            yminimum 1.0
+                
 
-            label loaded_title
-
-            text loaded_fiche
+    
 

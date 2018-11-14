@@ -43,10 +43,12 @@ define gui.notif_text = _p("""Voici votre première fiche !
     durant l'histoire. Elle se débloquerons au fur et à mesure que vous
     avancerez dans le jeu.
 
-    Lorsque vous débloquez une fiche, l'icone avec le point d'éxclamation apparais
+    Lorsque vous débloquez une fiche, l'icone avec le point d'exclamation apparait
     et une partie du texte est en surbrillance. En cliquant sur cette icone vous
     pouvez accèder à la dernière fiche débloquez.
 """)
+
+
 
 ## Un nom court pour le jeu qui sera utilisé pour les répertoires et le nom de
 ## l’exécutable. Il ne doit contenir que des caractères ASCII et ne doit pas
@@ -240,9 +242,24 @@ init python:
 define gui.default_fiche_title = "Première"
 
 define gui.default_fiche = """
-Voici la 1ere fiche"""
+Voici la 1ere fiche, les prochaines vous indiquerons des technos de toutes sortes"""
 
 define gui.php_fiche_title = "PHP"
 
 define gui.php_fiche = """
-PHP est un language de programation ..."""
+PHP (officiellement, ce sigle est un acronyme récursif pour PHP Hypertext Preprocessor) est un langage de scripts généraliste et Open Source, spécialement conçu pour le développement d'applications web. Il peut être intégré facilement au HTML."""
+
+define gui.html_fiche_title = "HTML"
+
+define gui.html_fiche = """
+HTML est un language front ..."""
+
+define gui.js_fiche_title = "JS"
+
+define gui.js_fiche = """
+Javasript est un language de front permettant d'animer les sites web, et de modifier les pages sans les recharger"""
+
+define gui.market_fiche_title = "Market"
+
+define gui.market_fiche = """
+Le market bof ..."""

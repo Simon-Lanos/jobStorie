@@ -11,11 +11,17 @@ define l = Character('Shawn', color="#bdb755")
 define a = Character('Sara', color="#e77354")
 define d = Character('Doc Tanaka', color="#8cc4f4")
 define s = Character('Sphinx', color="#612b5a")
-define n = Character('N.O.A.', color="#979191")
+define n = Character('Robot', color="#979191")
+
+image movie = Movie(size=(1220, 680), xpos=0, ypos=0, xanchor=0, yanchor=0)
 
 transform droite:
     xalign 0.75
     yalign 0.90
+
+transform left:
+    xalign 0.8
+    yalign 0.5
 
 transform gauche:
     xalign 0.20
@@ -32,8 +38,20 @@ style fiche:
 # Le jeu commence ici
 label start:
 
-    scene bg street
-    with dissolve
+  
+    scene black
+    with Pause(1)
+
+    play movie "fondanime.ogv" loop
+    show movie with dissolve
+
+    show robot off at gauche
+
+    n "Bienvenue sur JobStorie, je suis le robot {=fiche}narrateur{/color}."
+
+
+    hide movie with dissolve
+    stop movie
 
     show lux gigling at gauche
     
@@ -61,12 +79,12 @@ label start:
 
 label reponse1:
 
-    g "Puisque nous en sommes aux présentations, laisse moi te dire ce que tu fais la !"
+    g "Puisque nous en sommes aux présentations, laisse moi t'expliquer ce que tu fais la !"
     jump suite
 
 label reponse2:
 
-    g "Dans une {=fiche1}visual novel{/color} qui te mènera peut-etre vers ton avenir !"
+    g "Dans une visual novel qui te mènera peut-etre vers ton avenir !"
     jump suite
 
 label suite:
@@ -111,7 +129,8 @@ label reponse6:
 
 label suite2:
 
-    g "Sache aussi que je t'enverrais des informations de temps en temps pour te permettre de comprendre certains termes et technos, comme celle la  !"
+    g "Sache aussi que je t'enverrais des informations de temps en temps pour te permettre de comprendre certains termes et technos !"
+   
     show screen notif(None, None, True)
     g "Enfin bref tu verra bien, il est temps pour toi de commencer l'histoire, à plus !"
     jump history
@@ -133,10 +152,12 @@ label history:
    
     with moveinleft
 
-    a "Vous avez entendu parler de cet évenement sur les {=fiche2}nouvelles technologies{/color} ?"
-    show geek hitting at droite
+    a "Vous avez entendu parler de cet évenement sur les nouvelles technologies ?"
+    show geek bulle at droite
     l "Le doc nous a appellé, il faut y aller !"
+    show screen notif(1, None, False)
     a "Et toi, que veut tu faire ?"
+    
 
     menu:
 
@@ -156,9 +177,10 @@ label acte1:
 
     hide geek
     hide friend
-    scene bg laboratory
-    with dissolve
-    show lux gigling at gauche
+    
+   
+
+    
     with moveinleft
 
     g "Je me permet une petite ellipse car l'histoire n'est pas encore ecrite, bonne chance !"
@@ -179,7 +201,11 @@ label acte1:
     with moveinleft
     
     d "Le probleme c'est le public, je suis très mauvais communicant"
+    show screen notif(4, None, False)
     show geek think at droite
+
+
+    
 
     l "Il va bien falloir commencer par quelque chose, qu'en pense tu ?"
 
@@ -201,6 +227,8 @@ label acte1:
             $ market = True 
             jump non
 
+    
+
 
 label non:    
 
@@ -211,6 +239,7 @@ label non:
     with moveinleft  
 
     g "Hum, cette partie de l'histoire ne sera pas ecrite pour la présentation. Mais je vous envoi sur la partie dev ^^ !"
+    show screen notif(3, None, False)
     jump dev
 
 
@@ -339,7 +368,7 @@ label retour_date:
     show doc talking at middle 
     l "Bon, voyons cela, N.O.A quelle heure est-il ? "   
     n "Il est 36H66 !"
-    a "Hein ? Mais qu'est ce qu'il dit ? "
+    a "Hein ? Mais qu'est ce qu'il dit ?"
     d "On dirait bien que la synchronysation avec le serveur n'est pas bonne ! Nous allons régler le soucis rapidement. "
     m "Oui pas de problème !"
     d "Regarde ! Je te l'avais dit ! L'heure locale est différente de l'heure serveur ! Le problème vient de la ! "

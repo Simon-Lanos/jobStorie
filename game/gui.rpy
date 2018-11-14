@@ -9,7 +9,7 @@ init offset = -2
 ## Appelé gui.init réinitialise les styles à leurs valeurs par défaut et
 ## initialise la largeur et la hauteur du jeu.
 init python:
-    gui.init(1280, 720)
+    gui.init(1220, 680)
 
 
 
@@ -24,7 +24,7 @@ init python:
 
 ## Une couleur utilisée dans l’interface pour mettre l’accent sur un texte
 ## (surbrillance).
-define gui.accent_color = '#0099cc'
+define gui.accent_color = '#ffffff'
 
 ## La couleur utilisée pour le texte d’un bouton quand il n’a jamais été
 ## sélectionné ou survolé.
@@ -69,7 +69,7 @@ define gui.name_text_font = "DejaVuSans.ttf"
 define gui.interface_text_font = "DejaVuSans.ttf"
 
 ## La taille normale pour les dialogues.
-define gui.text_size = 30
+define gui.text_size = 28
 
 ## La taille pour le nom des personnages.
 define gui.name_text_size = 34
